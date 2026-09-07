@@ -141,3 +141,60 @@ footer {
     justify-content: center;
     gap: 30px;
 }
+
+.blurb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.portfolioHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.blurb p {
+    text-align: center;
+    padding: 5px;
+}
+
+.projectCollage {
+  width: 830;
+  height: 770px;
+  background: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.projectShowcase {
+  position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.projectShowcase p {
+  line-height: 2;
+  font-size: 19px;
+}
+
+.demoVideo {
+  top: 0px;
+}
+
+.projectThumbnail {
+  width: 490px;
+  height: 300px;
+}
+
+.dominosThumbnail {
+  width: 390px;
+  height: 300px;
+}

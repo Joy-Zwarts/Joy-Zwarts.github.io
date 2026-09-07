@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Handjet", sans-serif;
+  background: white;
+}
+
+header {
+  background: #A5A5A5;
+  height: 54.2px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  gap: 30px;
+}
+
+img.buttons, img.divider, img.tabIcons {
+  display: block;
+}
+
+img.tabIcons {
+    margin-left: auto;
+}
+
+.top {
+  display: flex;
+  padding: 20px;
+  background: white;
+}
+
+.right {
+  padding: 10px;
+  background: white;
+  height: 710px;
+  width: 50%;
+  display: flex;
+    justify-content: center;
+}
+
+img.notepad {
+    width: 670px;
+    height: 640px;
+}
+
+.whoamiTitle, .whoamiText {
+  position: absolute;
+}
+
+.whoamiTitle {
+  top: 146px;
+  left: 855px;
+}
+
+.whoamiText {
+  top: 245px;
+  left: 855px;
+}
+
+.left {
+  border-right: none;
+  padding: 10px;
+  background: white;
+  height: 710px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img.joy {
+    width: 370px;
+    height: 405px;
+}
+
+h1 {
+   font-family: "Handjet", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+p{
+  font-family: "Inria Serif", serif;
+  font-size: 23px;
+  margin: 0;
+}
+
+.bottom {
+  margin: 20px;
+  padding: 10px;
+  background: white;
+  height: 710px;
+}
+
+footer {
+  padding: 20px;
+  background: white;
+}

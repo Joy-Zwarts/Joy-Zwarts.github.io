@@ -89,13 +89,55 @@ p{
 }
 
 .bottom {
-  margin: 20px;
-  padding: 10px;
-  background: white;
-  height: 710px;
+    margin: 20px;
+    padding: 10px;
+    background: white;
+    height: 710px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.headerHistory {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.school {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    font-family: "Inria Serif", serif;
+}
+
+.school h2{
+    font-size: 26px;
+}
+
+.school h3{
+    font-size: 26px;
+}
+
+.projecten {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    font-family: "Inria Serif", serif;
+}
+
+.school h4, .projecten h4, .projecten li{
+    font-size: 22px;
+    font-weight: 100;
+}
+  
 footer {
-  padding: 20px;
-  background: white;
+    background: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
 }

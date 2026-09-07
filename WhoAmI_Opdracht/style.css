@@ -90,7 +90,6 @@ p{
 
 .bottom {
     margin: 20px;
-    padding: 10px;
     background: white;
     height: 710px;
     display: flex;
@@ -140,6 +139,7 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 30px;
+    padding-top: 50px;
 }
 
 .blurb {
@@ -197,4 +197,22 @@ footer {
 .dominosThumbnail {
   width: 390px;
   height: 300px;
+}
+
+.blogPosts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.blogPostDateTime {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.blogPosts p {
+    text-align: center;
 }

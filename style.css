@@ -33,11 +33,12 @@ img.tabIcons {
 }
 
 .right {
-  padding: 10px;
-  background: white;
-  height: 710px;
-  width: 50%;
-  display: flex;
+    position: relative;
+    padding: 10px;
+    background: white;
+    height: 710px;
+    width: 50%;
+    display: flex;
     justify-content: center;
 }
 
@@ -46,18 +47,20 @@ img.notepad {
     height: 640px;
 }
 
-.whoamiTitle, .whoamiText {
-  position: absolute;
+.whoamiTitle,
+.whoamiText {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
 }
 
 .whoamiTitle {
-  top: 146px;
-  left: 855px;
+    top: 80px;
 }
 
 .whoamiText {
-  top: 245px;
-  left: 855px;
+    top: 180px;
 }
 
 .left {

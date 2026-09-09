@@ -189,7 +189,9 @@ footer {
 }
 
 .demoVideo {
-  top: 0px;
+    top: 0px;
+    width: 410px;
+    height: 290px;
 }
 
 .projectThumbnail {

@@ -275,15 +275,15 @@ footer {
   }
 
   .whoamiTitle {
-    top: 12%;
-    font-size: 42px;
-  }
+  top: 14%;
+  font-size: 36px;}
 
-  .whoamiText {
-    top: 23%;
-    font-size: 25px;
-    line-height: 1.4;
-  }
+    .whoamiText {
+    top: 27%;
+    width: 66%;
+    font-size: 20px;
+    line-height: 1.35;
+    }
 
   .bottom {
     margin: 10px;
@@ -325,7 +325,7 @@ footer {
   }
 }
 
-  @media (max-width: 600px) {
+@media (max-width: 600px) {
   header {
     padding: 0 8px;
     gap: 10px;
@@ -365,12 +365,12 @@ footer {
   top: 14%;
   font-size: 36px;}
 
-.whoamiText {
-  top: 27%;
-  width: 66%;
-  font-size: 20px;
-  line-height: 1.35;
-}
+    .whoamiText {
+    top: 27%;
+    width: 66%;
+    font-size: 20px;
+    line-height: 1.35;
+    }
 
   .bottom {
     margin: 5px;

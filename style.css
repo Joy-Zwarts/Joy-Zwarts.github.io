@@ -462,9 +462,9 @@ footer {
 
   .whoamiText {
     top: 27%;
-    width: 58%;
-    font-size: 19px;
-    line-height: 1.4;
+    width: 54%;
+    font-size: 18px;
+    line-height: 1.35;
   }
 
   .bottom {
@@ -549,7 +549,7 @@ footer {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 57%;
+    width: 52%;
   }
 
   .projectShowcase h1 {
@@ -558,13 +558,13 @@ footer {
   }
 
   .projectShowcase p {
-    font-size: 14px;
-    line-height: 1.3;
+    font-size: 12px;
+    line-height: 1.2;
     width: 100%;
   }
 
   .demoVideo {
-    width: 100%;
+    width: 88%;
     height: auto;
   }
 

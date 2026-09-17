@@ -89,6 +89,7 @@ img.notepad {
 
 .whoamiText {
     top: 180px;
+    overflow-wrap: normal;
 }
 
 .left {

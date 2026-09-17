@@ -253,15 +253,16 @@ footer {
   .left,
   .right {
     width: 100%;
-    height: auto;
   }
 
   .left {
+    height: auto;
     padding: 5px;
   }
 
   .right {
-    padding: 5px;
+    height: auto;
+    padding: 0;
   }
 
   img.notepad {
@@ -269,21 +270,18 @@ footer {
     height: auto;
   }
 
-  .whoamiTitle,
-  .whoamiText {
-    width: 70%;
+  .whoamiTitle {
+    top: 14%;
+    width: 60%;
+    font-size: 42px;
   }
 
-  .whoamiTitle {
-  top: 14%;
-  font-size: 36px;}
-
-    .whoamiText {
-    top: 27%;
-    width: 66%;
-    font-size: 20px;
+  .whoamiText {
+    top: 28%;
+    width: 58%;
+    font-size: 22px;
     line-height: 1.35;
-    }
+  }
 
   .bottom {
     margin: 10px;
@@ -325,6 +323,7 @@ footer {
   }
 }
 
+
 @media (max-width: 600px) {
   header {
     padding: 0 8px;
@@ -362,15 +361,17 @@ footer {
   }
 
   .whoamiTitle {
-  top: 14%;
-  font-size: 36px;}
+    top: 14%;
+    width: 60%;
+    font-size: 34px;
+  }
 
-    .whoamiText {
-    top: 27%;
-    width: 66%;
-    font-size: 20px;
-    line-height: 1.35;
-    }
+  .whoamiText {
+    top: 29%;
+    width: 58%;
+    font-size: 19px;
+    line-height: 1.4;
+  }
 
   .bottom {
     margin: 5px;

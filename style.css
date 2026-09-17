@@ -244,17 +244,174 @@ footer {
 }
 
 @media (max-width: 1200px) {
-    .top {
-        flex-direction: column;
-        align-items: center;
-    }   
+  .top {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
 
-    img.notepad{
-        width: 770px;
-        height: 740px;
-    }
+  .left,
+  .right {
+    width: 100%;
+    height: auto;
+  }
 
-    .whoamiText {
-        font-weight: 50px;
-    }
+  .left {
+    padding: 5px;
+  }
+
+  .right {
+    padding: 5px;
+  }
+
+  img.notepad {
+    width: min(770px, 100%);
+    height: auto;
+  }
+
+  .whoamiTitle,
+  .whoamiText {
+    width: 70%;
+  }
+
+  .whoamiTitle {
+    top: 12%;
+    font-size: 42px;
+  }
+
+  .whoamiText {
+    top: 23%;
+    font-size: 25px;
+    line-height: 1.4;
+  }
+
+  .bottom {
+    margin: 10px;
+    height: auto;
+  }
+
+  .headerHistory {
+    gap: 10px;
+  }
+
+  .headerHistory h2 {
+    font-size: 40px;
+  }
+
+  .school {
+    gap: 15px;
+  }
+
+  .school h3 {
+    font-size: 24px;
+  }
+
+  .school p {
+    font-size: 21px;
+  }
+
+  .projecten {
+    gap: 15px;
+  }
+
+  .projecten li,
+  .projecten h4 {
+    font-size: 21px;
+  }
+
+  footer {
+    gap: 15px;
+    padding-top: 20px;
+  }
+}
+
+  @media (max-width: 600px) {
+  header {
+    padding: 0 8px;
+    gap: 10px;
+  }
+
+  .top {
+    padding: 5px;
+  }
+
+  .left {
+    padding: 5px;
+  }
+
+  img.joy {
+    width: 250px;
+    height: auto;
+  }
+
+  .left h1 {
+    font-size: 40px;
+  }
+
+  .left p {
+    font-size: 21px;
+  }
+
+  .right {
+    padding: 0;
+  }
+
+  img.notepad {
+    width: 100%;
+    height: auto;
+  }
+
+  .whoamiTitle {
+    top: 10%;
+    font-size: 36px;
+  }
+
+  .whoamiText {
+    top: 21%;
+    width: 72%;
+    font-size: 20px;
+    line-height: 1.35;
+  }
+
+  .bottom {
+    margin: 5px;
+  }
+
+  .headerHistory {
+    gap: 8px;
+  }
+
+  .headerHistory h2 {
+    font-size: 32px;
+  }
+
+  .school {
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .school h3 {
+    font-size: 22px;
+  }
+
+  .school p {
+    font-size: 19px;
+  }
+
+  .projecten {
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .projecten li,
+  .projecten h4 {
+    font-size: 19px;
+  }
+
+  footer {
+    gap: 10px;
+    padding-top: 15px;
+  }
 }

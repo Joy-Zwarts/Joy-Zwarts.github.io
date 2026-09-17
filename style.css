@@ -62,6 +62,16 @@ img.tabIcons {
   background: white;
 }
 
+.left {
+  padding: 10px;
+  background: white;
+  height: 710px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .right {
   position: relative;
   padding: 10px;
@@ -70,6 +80,11 @@ img.tabIcons {
   width: 50%;
   display: flex;
   justify-content: center;
+}
+
+img.joy {
+  width: 370px;
+  height: 405px;
 }
 
 img.notepad {
@@ -92,22 +107,6 @@ img.notepad {
 .whoamiText {
   top: 180px;
   overflow-wrap: normal;
-}
-
-.left {
-  border-right: none;
-  padding: 10px;
-  background: white;
-  height: 710px;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-img.joy {
-  width: 370px;
-  height: 405px;
 }
 
 p {
@@ -217,16 +216,18 @@ footer {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  width: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 500px;
+  text-align: center;
 }
 
 .projectShowcase p {
   line-height: 2;
   font-size: 19px;
   width: 100%;
+  text-align: center;
 }
 
 .demoVideo {
@@ -263,6 +264,90 @@ footer {
 }
 
 @media (max-width: 1200px) {
+  .top {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .left {
+    height: auto;
+    padding: 5px;
+  }
+
+  .right {
+    height: auto;
+    padding: 0;
+  }
+
+  img.joy {
+    width: 300px;
+    height: auto;
+  }
+
+  img.notepad {
+    width: min(670px, 100%);
+    height: auto;
+  }
+
+  .whoamiTitle,
+  .whoamiText {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .whoamiTitle {
+    top: 14%;
+    width: 60%;
+    font-size: 42px;
+  }
+
+  .whoamiText {
+    top: 27%;
+    width: 58%;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .bottom {
+    margin: 10px;
+    height: auto;
+  }
+
+  .headerHistory {
+    gap: 10px;
+  }
+
+  .headerHistory h2 {
+    font-size: 40px;
+  }
+
+  .school {
+    gap: 15px;
+  }
+
+  .school h3 {
+    font-size: 24px;
+  }
+
+  .school p {
+    font-size: 21px;
+  }
+
+  .projecten {
+    gap: 15px;
+  }
+
+  .projecten li,
+  .projecten h4 {
+    font-size: 21px;
+  }
+
   .blurb {
     padding: 10px;
   }
@@ -271,7 +356,6 @@ footer {
     font-size: 21px;
     line-height: 1.4;
     max-width: 800px;
-    text-align: center;
   }
 
   .portfolioHeader {
@@ -285,6 +369,7 @@ footer {
   .projectCollage {
     width: 100%;
     height: auto;
+    min-height: 0;
     margin: 0 auto;
     padding: 0 10px;
     gap: 10px;
@@ -339,6 +424,86 @@ footer {
     gap: 10px;
   }
 
+  .top {
+    padding: 5px;
+  }
+
+  .left {
+    padding: 5px;
+  }
+
+  img.joy {
+    width: 250px;
+    height: auto;
+  }
+
+  .left h1 {
+    font-size: 40px;
+  }
+
+  .left p {
+    font-size: 21px;
+  }
+
+  .right {
+    padding: 0;
+  }
+
+  img.notepad {
+    width: 100%;
+    height: auto;
+  }
+
+  .whoamiTitle {
+    top: 14%;
+    width: 60%;
+    font-size: 34px;
+  }
+
+  .whoamiText {
+    top: 27%;
+    width: 58%;
+    font-size: 19px;
+    line-height: 1.4;
+  }
+
+  .bottom {
+    margin: 5px;
+  }
+
+  .headerHistory {
+    gap: 8px;
+  }
+
+  .headerHistory h2 {
+    font-size: 32px;
+  }
+
+  .school {
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .school h3 {
+    font-size: 22px;
+  }
+
+  .school p {
+    font-size: 19px;
+  }
+
+  .projecten {
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .projecten li,
+  .projecten h4 {
+    font-size: 19px;
+  }
+
   .blurb {
     padding: 5px 10px;
   }
@@ -364,6 +529,7 @@ footer {
   .projectCollage {
     width: 100%;
     height: auto;
+    min-height: 0;
     margin: 0 auto;
     padding: 0 5px;
     gap: 5px;

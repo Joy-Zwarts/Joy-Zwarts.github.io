@@ -404,7 +404,7 @@ footer {
   .projectShowcase p {
     font-size: 18px;
     line-height: 1.4;
-    width: 100%;
+    width: 60%;
   }
 
   .demoVideo {
@@ -549,7 +549,7 @@ footer {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 52%;
+    width: 60%;
   }
 
   .projectShowcase h1 {
@@ -564,7 +564,7 @@ footer {
   }
 
   .demoVideo {
-    width: 88%;
+    width: 70%;
     height: auto;
   }
 

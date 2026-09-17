@@ -46,12 +46,14 @@ header {
   gap: 30px;
 }
 
-img.buttons, img.divider, img.tabIcons {
+img.buttons,
+img.divider,
+img.tabIcons {
   display: block;
 }
 
 img.tabIcons {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 .top {
@@ -61,35 +63,35 @@ img.tabIcons {
 }
 
 .right {
-    position: relative;
-    padding: 10px;
-    background: white;
-    height: 710px;
-    width: 50%;
-    display: flex;
-    justify-content: center;
+  position: relative;
+  padding: 10px;
+  background: white;
+  height: 710px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
 }
 
 img.notepad {
-    width: 670px;
-    height: 640px;
+  width: 670px;
+  height: 640px;
 }
 
 .whoamiTitle,
 .whoamiText {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 500px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
 }
 
 .whoamiTitle {
-    top: 110px;
+  top: 110px;
 }
 
 .whoamiText {
-    top: 180px;
-    overflow-wrap: normal;
+  top: 180px;
+  overflow-wrap: normal;
 }
 
 .left {
@@ -104,8 +106,8 @@ img.notepad {
 }
 
 img.joy {
-    width: 370px;
-    height: 405px;
+  width: 370px;
+  height: 405px;
 }
 
 p {
@@ -115,18 +117,18 @@ p {
 }
 
 .bottom {
-    margin: 20px;
-    background: white;
-    height: 710px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  margin: 20px;
+  background: white;
+  height: 710px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .headerHistory {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .school {
@@ -144,75 +146,92 @@ p {
 }
 
 .projecten {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 40px;
-    font-family: "Inria Serif", serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+  font-family: "Inria Serif", serif;
 }
 
-.school h4, .projecten h4, .projecten li{
-    font-size: 22px;
-    font-weight: 100;
+.school h4,
+.projecten h4,
+.projecten li {
+  font-size: 22px;
+  font-weight: 100;
 }
-  
+
 footer {
-    background: white;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    padding-top: 50px;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 50px;
 }
 
 .blurb {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
 
 .portfolioHeader {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 .blurb p {
-    text-align: center;
-    padding: 5px;
+  text-align: center;
+  padding: 5px;
 }
 
 .projectCollage {
-  width: 830;
+  position: relative;
+  width: 830px;
   height: 770px;
+  margin: 0 auto;
   background: white;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.projectCollage > img:not(.buttons) {
+  width: 830px;
+  height: 770px;
+  object-fit: contain;
+}
+
+.projectCollage > a {
+  flex-shrink: 0;
 }
 
 .projectShowcase {
   position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
 }
 
 .projectShowcase p {
   line-height: 2;
   font-size: 19px;
+  width: 100%;
 }
 
 .demoVideo {
-    top: 0px;
-    width: 410px;
-    height: 290px;
+  width: 410px;
+  height: 290px;
 }
 
 .projectThumbnail {
@@ -226,95 +245,86 @@ footer {
 }
 
 .blogPosts {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
 .blogPostDateTime {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
 }
 
 .blogPosts p {
-    text-align: center;
+  text-align: center;
 }
 
 @media (max-width: 1200px) {
-  .top {
-    flex-direction: column;
-    align-items: center;
+  .blurb {
     padding: 10px;
   }
 
-  .left,
-  .right {
-    width: 100%;
+  .blurb p {
+    font-size: 21px;
+    line-height: 1.4;
+    max-width: 800px;
+    text-align: center;
   }
 
-  .left {
-    height: auto;
-    padding: 5px;
-  }
-
-  .right {
-    height: auto;
-    padding: 0;
-  }
-
-  img.notepad {
-    width: min(770px, 100%);
-    height: auto;
-  }
-
-  .whoamiTitle {
-    top: 14%;
-    width: 60%;
-    font-size: 42px;
-  }
-
-  .whoamiText {
-    top: 28%;
-    width: 58%;
-    font-size: 22px;
-    line-height: 1.35;
-  }
-
-  .bottom {
-    margin: 10px;
-    height: auto;
-  }
-
-  .headerHistory {
+  .portfolioHeader {
     gap: 10px;
   }
 
-  .headerHistory h2 {
+  .portfolioHeader h1 {
+    font-size: 42px;
+  }
+
+  .projectCollage {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 10px;
+    gap: 10px;
+  }
+
+  .projectCollage > img:not(.buttons) {
+    width: min(830px, 85%);
+    height: auto;
+  }
+
+  .projectCollage > a {
+    flex-shrink: 0;
+  }
+
+  .projectCollage > a img.buttons {
+    width: 45px;
+    height: auto;
+  }
+
+  .projectShowcase {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 58%;
+  }
+
+  .projectShowcase h1 {
     font-size: 40px;
+    margin: 8px 0;
   }
 
-  .school {
-    gap: 15px;
+  .projectShowcase p {
+    font-size: 18px;
+    line-height: 1.4;
+    width: 100%;
   }
 
-  .school h3 {
-    font-size: 24px;
-  }
-
-  .school p {
-    font-size: 21px;
-  }
-
-  .projecten {
-    gap: 15px;
-  }
-
-  .projecten li,
-  .projecten h4 {
-    font-size: 21px;
+  .demoVideo {
+    width: 100%;
+    height: auto;
   }
 
   footer {
@@ -323,95 +333,77 @@ footer {
   }
 }
 
-
 @media (max-width: 600px) {
   header {
     padding: 0 8px;
     gap: 10px;
   }
 
-  .top {
-    padding: 5px;
+  .blurb {
+    padding: 5px 10px;
   }
 
-  .left {
-    padding: 5px;
+  .portfolioHeader {
+    gap: 6px;
   }
 
-  img.joy {
-    width: 250px;
+  .portfolioHeader h1 {
+    font-size: 34px;
+  }
+
+  .portfolioHeader img {
+    width: 35px;
     height: auto;
   }
 
-  .left h1 {
-    font-size: 40px;
+  .blurb p {
+    font-size: 18px;
+    line-height: 1.4;
   }
 
-  .left p {
-    font-size: 21px;
+  .projectCollage {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 5px;
+    gap: 5px;
   }
 
-  .right {
-    padding: 0;
+  .projectCollage > img:not(.buttons) {
+    width: 82%;
+    height: auto;
   }
 
-  img.notepad {
+  .projectCollage > a img.buttons {
+    width: 30px;
+    height: auto;
+  }
+
+  .projectShowcase {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 57%;
+  }
+
+  .projectShowcase h1 {
+    font-size: 30px;
+    margin: 5px 0;
+  }
+
+  .projectShowcase p {
+    font-size: 14px;
+    line-height: 1.3;
+    width: 100%;
+  }
+
+  .demoVideo {
     width: 100%;
     height: auto;
   }
 
-  .whoamiTitle {
-    top: 14%;
-    width: 60%;
-    font-size: 34px;
-  }
-
-  .whoamiText {
-    top: 29%;
-    width: 58%;
-    font-size: 19px;
-    line-height: 1.4;
-  }
-
-  .bottom {
-    margin: 5px;
-  }
-
-  .headerHistory {
-    gap: 8px;
-  }
-
-  .headerHistory h2 {
-    font-size: 32px;
-  }
-
-  .school {
-    gap: 8px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .school h3 {
-    font-size: 22px;
-  }
-
-  .school p {
-    font-size: 19px;
-  }
-
-  .projecten {
-    gap: 8px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .projecten li,
-  .projecten h4 {
-    font-size: 19px;
-  }
-
   footer {
-    gap: 10px;
+    gap: 8px;
     padding-top: 15px;
   }
 }

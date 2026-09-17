@@ -247,4 +247,13 @@ footer {
         flex-direction: column;
         align-items: center;
     }   
+
+    img.notepad{
+        width: 770px;
+        height: 740px;
+    }
+
+    .whoamiText {
+        font-weight: 50px;
+    }
 }

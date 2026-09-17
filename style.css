@@ -362,16 +362,15 @@ footer {
   }
 
   .whoamiTitle {
-    top: 10%;
-    font-size: 36px;
-  }
+  top: 14%;
+  font-size: 36px;}
 
-  .whoamiText {
-    top: 21%;
-    width: 72%;
-    font-size: 20px;
-    line-height: 1.35;
-  }
+.whoamiText {
+  top: 27%;
+  width: 66%;
+  font-size: 20px;
+  line-height: 1.35;
+}
 
   .bottom {
     margin: 5px;

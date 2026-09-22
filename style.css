@@ -1,316 +1,317 @@
+
 * {
-  box-sizing: border-box;
-  }
+    box-sizing: border-box;
+}
 
 body {
-margin: 0;
-background: white;
-min-height: 100vh;
-display: flex;
-flex-direction: column;
+    margin: 0;
+    background: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 main {
-flex: 1;
+    flex: 1;
 }
 
 h1,
 h2,
 h3,
 h4 {
-font-family: "Handjet", sans-serif;
-margin: 0;
+    font-family: "Handjet", sans-serif;
+    margin: 0;
 }
 
 h1 {
-font-size: 48px;
-font-weight: 600;
+    font-size: 48px;
+    font-weight: 600;
 }
 
 h2 {
-font-size: 48px;
-font-weight: 600;
+    font-size: 48px;
+    font-weight: 600;
 }
 
 h3 {
-font-size: 26px;
-font-weight: 600;
+    font-size: 26px;
+    font-weight: 600;
 }
 
 h4 {
-font-family: "Inria Serif", serif;
-font-size: 22px;
-font-weight: 100;
+    font-family: "Inria Serif", serif;
+    font-size: 22px;
+    font-weight: 100;
 }
 
 body > header {
-background: #A5A5A5;
-height: 54.2px;
-width: 100%;
-display: flex;
-align-items: center;
-padding: 0 20px;
-flex-shrink: 0;
+    background: #A5A5A5;
+    height: 54.2px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    flex-shrink: 0;
 }
 
 body > header section {
-width: 100%;
-display: flex;
-align-items: center;
-gap: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
 
 img.buttons,
 img.divider,
 img.tabIcons {
-display: block;
+    display: block;
 }
 
 img.tabIcons {
-margin-left: auto;
+    margin-left: auto;
 }
 
 .top {
-display: flex;
-padding: 20px;
-background: white;
+    display: flex;
+    padding: 20px;
+    background: white;
 }
 
 .left {
-padding: 10px;
-background: white;
-height: 710px;
-width: 50%;
-display: flex;
-flex-direction: column;
-align-items: center;
+    padding: 10px;
+    background: white;
+    height: 710px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .right {
-position: relative;
-padding: 10px;
-background: white;
-height: 710px;
-width: 50%;
-display: flex;
-justify-content: center;
+    position: relative;
+    padding: 10px;
+    background: white;
+    height: 710px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
 }
 
 img.joy {
-width: 370px;
-height: 405px;
+    width: 370px;
+    height: 405px;
 }
 
 img.notepad {
-width: 670px;
-height: 640px;
+    width: 670px;
+    height: 640px;
 }
 
 .whoamiTitle,
 .whoamiText {
-position: absolute;
-left: 50%;
-transform: translateX(-50%);
-width: 500px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
 }
 
 .whoamiTitle {
-top: 110px;
+    top: 110px;
 }
 
 .whoamiText {
-top: 180px;
-overflow-wrap: normal;
+    top: 180px;
+    overflow-wrap: normal;
 }
 
 p {
-font-family: "Inria Serif", serif;
-font-size: 23px;
-margin: 0;
+    font-family: "Inria Serif", serif;
+    font-size: 23px;
+    margin: 0;
 }
 
 .bottom {
-margin: 20px;
-background: white;
-height: 710px;
-display: flex;
-flex-direction: column;
-align-items: center;
+    margin: 20px;
+    background: white;
+    height: 710px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .headerHistory {
-display: flex;
-align-items: center;
-justify-content: center;
-gap: 20px;
-background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background: white;
 }
 
 .school {
-display: flex;
-flex-direction: row;
-align-items: center;
-gap: 30px;
-font-family: "Inria Serif", serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    font-family: "Inria Serif", serif;
 }
 
 .school h3 {
-font-family: "Inria Serif", serif;
-font-size: 26px;
-font-weight: 600;
+    font-family: "Inria Serif", serif;
+    font-size: 26px;
+    font-weight: 600;
 }
 
 .projecten {
-display: flex;
-flex-direction: row;
-align-items: center;
-gap: 40px;
-font-family: "Inria Serif", serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    font-family: "Inria Serif", serif;
 }
 
 .school h4,
 .projecten h4,
 .projecten li {
-font-size: 22px;
-font-weight: 100;
+    font-size: 22px;
+    font-weight: 100;
 }
 
 .blurb {
-display: flex;
-flex-direction: column;
-align-items: center;
-width: 100%;
-padding: 35px 20px 45px;
-gap: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 35px 20px 45px;
+    gap: 25px;
 }
 
 .portfolioHeader {
-display: flex;
-align-items: center;
-justify-content: center;
-gap: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
 }
 
 .portfolioHeader h1 {
-font-size: 56px;
+    font-size: 56px;
 }
 
 .portfolioHeader img {
-width: 50px;
-height: auto;
+    width: 50px;
+    height: auto;
 }
 
 .blurb p {
-max-width: 1000px;
-padding: 5px;
-text-align: center;
-font-size: 25px;
-line-height: 1.55;
+    max-width: 1000px;
+    padding: 5px;
+    text-align: center;
+    font-size: 25px;
+    line-height: 1.55;
 }
 
 .projectCollage {
-position: relative;
-width: 100%;
-max-width: 830px;
-margin: 0 auto;
-background: white;
-display: flex;
-align-items: center;
-justify-content: center;
-gap: 20px;
+    position: relative;
+    width: 100%;
+    max-width: 830px;
+    margin: 0 auto;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 
 .projectCollage > img:not(.buttons) {
-width: 100%;
-height: auto;
-display: block;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .projectCollage > a {
-flex-shrink: 0;
+    flex-shrink: 0;
 }
 
 .projectShowcase {
-position: absolute;
-left: 50%;
-top: 50%;
-transform: translate(-50%, -50%);
-width: 60%;
-display: flex;
-flex-direction: column;
-align-items: center;
-text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .projectShowcase article {
-width: 100%;
+    width: 100%;
 }
 
 .projectShowcase h2 {
-margin: 12px 0;
-font-size: 48px;
+    margin: 12px 0;
+    font-size: 48px;
 }
 
 .projectShowcase p {
-width: 100%;
-text-align: center;
-font-size: 20px;
-line-height: 1.45;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.45;
 }
 
 .demoVideo {
-width: 100%;
-max-width: 410px;
-height: auto;
+    width: 100%;
+    max-width: 410px;
+    height: auto;
 }
 
 .projectThumbnail {
-width: 490px;
-height: 300px;
+    width: 490px;
+    height: 300px;
 }
 
 .dominosThumbnail {
-width: 390px;
-height: 300px;
+    width: 390px;
+    height: 300px;
 }
 
 .blogPosts {
-display: flex;
-flex-direction: column;
-align-items: center;
-gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
 .blogPostDateTime {
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
 }
 
 .blogPosts p {
-text-align: center;
+    text-align: center;
 }
 
 footer {
-width: 100%;
-background: white;
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: center;
-gap: 30px;
-padding: 45px 0 25px;
-margin-top: auto;
-flex-shrink: 0;
+    width: 100%;
+    background: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 45px 0 25px;
+    margin-top: auto;
+    flex-shrink: 0;
 }
 
 footer section {
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: center;
-gap: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
 }
 
 @media (max-width: 700px) {
@@ -334,30 +335,25 @@ gap: 30px;
     }
 
     body > header {
-        height: 65px;
-        padding: 0 20px;
+        height: auto;
+        width: 100%;
+        padding: 15px 0;
     }
 
     body > header section {
-        gap: 30px;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
     }
 
-    
-
-    img.buttons {
-        width: auto;
-        height: auto;
-    }
-
-    img.divider {
-        width: auto;
-        height: auto;
-    }
-
+    img.buttons,
+    img.divider,
     img.tabIcons {
         width: auto;
         height: auto;
-        margin-left: auto;
+        margin: 0;
     }
 
     .top {
@@ -404,23 +400,23 @@ gap: 30px;
 
     .whoamiTitle {
         position: absolute;
-        top: 11%;
+        top: 10%;
         left: 50%;
         transform: translateX(-50%);
-        width: 80%;
-        font-size: 31px;
+        width: 82%;
+        font-size: 30px;
         line-height: 1;
         text-align: center;
     }
 
     .whoamiText {
         position: absolute;
-        top: 24%;
+        top: 21%;
         left: 50%;
         transform: translateX(-50%);
-        width: 76%;
-        font-size: 13.5px;
-        line-height: 1.35;
+        width: 80%;
+        font-size: 12.5px;
+        line-height: 1.28;
         text-align: left;
         overflow-wrap: break-word;
     }
@@ -635,34 +631,25 @@ gap: 30px;
 
     footer {
         width: 100%;
-        padding: 45px 20px 25px;
+        padding: 35px 0 25px;
     }
 
     footer section {
         width: 100%;
-        gap: 30px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
     }
 
     footer img {
         width: auto;
         height: auto;
+        margin: 0;
     }
 }
 
 @media (max-width: 400px) {
-
-    body > header {
-        height: 54.2px;
-        padding: 0 20px;
-    }
-
-    body > header section {
-        gap: 20px;
-    }
-
-    header {
-      flex-direction: column;
-    }
 
     .portfolioHeader h1 {
         font-size: 40px;
@@ -697,16 +684,16 @@ gap: 30px;
     }
 
     .whoamiTitle {
-        top: 13%;
-        width: 82%;
-        font-size: 23px;
+        top: 10%;
+        width: 84%;
+        font-size: 25px;
     }
 
     .whoamiText {
-        top: 22%;
-        width: 81%;
-        font-size: 12px;
-        line-height: 1.3;
+        top: 20%;
+        width: 82%;
+        font-size: 11.5px;
+        line-height: 1.25;
     }
 
     .blogPostDateTime h1 {
@@ -717,3 +704,4 @@ gap: 30px;
         font-size: 18px;
     }
 }
+

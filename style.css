@@ -342,6 +342,8 @@ gap: 30px;
         gap: 30px;
     }
 
+    
+
     img.buttons {
         width: auto;
         height: auto;
@@ -658,6 +660,10 @@ gap: 30px;
         gap: 20px;
     }
 
+    header {
+      flex-direction: column;
+    }
+
     .portfolioHeader h1 {
         font-size: 40px;
     }
@@ -691,14 +697,14 @@ gap: 30px;
     }
 
     .whoamiTitle {
-        top: 10%;
+        top: 13%;
         width: 82%;
-        font-size: 27px;
+        font-size: 23px;
     }
 
     .whoamiText {
         top: 22%;
-        width: 78%;
+        width: 81%;
         font-size: 12px;
         line-height: 1.3;
     }

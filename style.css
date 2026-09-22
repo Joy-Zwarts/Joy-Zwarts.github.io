@@ -171,29 +171,40 @@ font-weight: 100;
 display: flex;
 flex-direction: column;
 align-items: center;
-padding: 30px 20px 40px;
+padding: 40px 20px 55px;
 width: 100%;
+gap: 25px;
 }
 
 .portfolioHeader {
 display: flex;
 align-items: center;
 justify-content: center;
-gap: 20px;
+gap: 25px;
+}
+
+.portfolioHeader h1 {
+font-size: 56px;
+}
+
+.portfolioHeader img {
+width: 50px;
+height: auto;
 }
 
 .blurb p {
 text-align: center;
 padding: 5px;
 max-width: 1000px;
-line-height: 1.5;
+font-size: 25px;
+line-height: 1.55;
 }
 
 .projectCollage {
 position: relative;
 width: 100%;
 max-width: 830px;
-margin: 0 auto 40px;
+margin: 0 auto 55px;
 background: white;
 display: flex;
 align-items: center;
@@ -229,14 +240,14 @@ width: 100%;
 
 .projectShowcase h2 {
 font-size: 48px;
-margin: 8px 0;
+margin: 12px 0;
 }
 
 .projectShowcase p {
 width: 100%;
 text-align: center;
-font-size: 19px;
-line-height: 1.4;
+font-size: 20px;
+line-height: 1.45;
 }
 
 .demoVideo {
@@ -280,7 +291,7 @@ flex-direction: row;
 align-items: center;
 justify-content: center;
 gap: 30px;
-padding: 40px 0 20px;
+padding: 45px 0 25px;
 }
 
 footer section {
@@ -386,21 +397,26 @@ font-size: 21px;
 }
 
 .blurb {
-padding: 20px 10px 35px;
-}
-
-.blurb p {
-font-size: 22px;
-line-height: 1.5;
-max-width: 800px;
+padding: 35px 15px 50px;
+gap: 25px;
 }
 
 .portfolioHeader {
-gap: 10px;
+gap: 18px;
 }
 
 .portfolioHeader h1 {
-font-size: 42px;
+font-size: 50px;
+}
+
+.portfolioHeader img {
+width: 45px;
+}
+
+.blurb p {
+font-size: 23px;
+line-height: 1.55;
+max-width: 800px;
 }
 
 .projectCollage {
@@ -408,7 +424,7 @@ width: 100%;
 max-width: 830px;
 padding: 0 10px;
 gap: 10px;
-margin-bottom: 35px;
+margin-bottom: 50px;
 }
 
 .projectCollage > img:not(.buttons) {
@@ -426,13 +442,13 @@ width: 58%;
 }
 
 .projectShowcase h2 {
-font-size: 40px;
-margin: 8px 0;
+font-size: 42px;
+margin: 10px 0;
 }
 
 .projectShowcase p {
 font-size: 19px;
-line-height: 1.4;
+line-height: 1.45;
 }
 
 .demoVideo {
@@ -443,7 +459,7 @@ height: auto;
 
 footer {
 gap: 15px;
-padding: 35px 0 20px;
+padding: 40px 0 20px;
 }
 
 footer section {
@@ -543,26 +559,27 @@ font-size: 19px;
 
 .blurb {
 width: 100%;
-padding: 15px 10px 30px;
+padding: 25px 12px 45px;
+gap: 22px;
 }
 
 .portfolioHeader {
-gap: 6px;
+gap: 12px;
 }
 
 .portfolioHeader h1 {
-font-size: 36px;
+font-size: 44px;
 }
 
 .portfolioHeader img {
-width: 35px;
-height: auto;
+width: 42px;
 }
 
 .blurb p {
 width: 100%;
-font-size: 20px;
-line-height: 1.5;
+max-width: 100%;
+font-size: 21px;
+line-height: 1.55;
 padding: 5px;
 }
 
@@ -571,7 +588,7 @@ width: 100%;
 max-width: 100%;
 padding: 0 5px;
 gap: 5px;
-margin-bottom: 25px;
+margin-bottom: 35px;
 overflow: hidden;
 }
 
@@ -597,7 +614,7 @@ margin: 8px 0;
 .projectShowcase p {
 width: 100%;
 font-size: 15px;
-line-height: 1.35;
+line-height: 1.4;
 }
 
 .demoVideo {
@@ -608,7 +625,7 @@ height: auto;
 
 footer {
 gap: 8px;
-padding: 25px 0 15px;
+padding: 30px 0 15px;
 }
 
 footer section {

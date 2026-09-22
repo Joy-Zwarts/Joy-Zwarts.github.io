@@ -5,6 +5,13 @@
 body {
 margin: 0;
 background: white;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+}
+
+main {
+flex: 1;
 }
 
 h1,
@@ -43,6 +50,7 @@ width: 100%;
 display: flex;
 align-items: center;
 padding: 0 20px;
+flex-shrink: 0;
 }
 
 body > header section {
@@ -171,8 +179,8 @@ font-weight: 100;
 display: flex;
 flex-direction: column;
 align-items: center;
-padding: 40px 20px 55px;
 width: 100%;
+padding: 35px 20px 45px;
 gap: 25px;
 }
 
@@ -193,9 +201,9 @@ height: auto;
 }
 
 .blurb p {
-text-align: center;
-padding: 5px;
 max-width: 1000px;
+padding: 5px;
+text-align: center;
 font-size: 25px;
 line-height: 1.55;
 }
@@ -204,7 +212,7 @@ line-height: 1.55;
 position: relative;
 width: 100%;
 max-width: 830px;
-margin: 0 auto 55px;
+margin: 0 auto;
 background: white;
 display: flex;
 align-items: center;
@@ -239,8 +247,8 @@ width: 100%;
 }
 
 .projectShowcase h2 {
-font-size: 48px;
 margin: 12px 0;
+font-size: 48px;
 }
 
 .projectShowcase p {
@@ -285,6 +293,7 @@ text-align: center;
 }
 
 footer {
+width: 100%;
 background: white;
 display: flex;
 flex-direction: row;
@@ -292,6 +301,8 @@ align-items: center;
 justify-content: center;
 gap: 30px;
 padding: 45px 0 25px;
+margin-top: auto;
+flex-shrink: 0;
 }
 
 footer section {
@@ -414,9 +425,9 @@ width: 45px;
 }
 
 .blurb p {
+max-width: 800px;
 font-size: 23px;
 line-height: 1.55;
-max-width: 800px;
 }
 
 .projectCollage {
@@ -424,7 +435,6 @@ width: 100%;
 max-width: 830px;
 padding: 0 10px;
 gap: 10px;
-margin-bottom: 50px;
 }
 
 .projectCollage > img:not(.buttons) {
@@ -559,8 +569,8 @@ font-size: 19px;
 
 .blurb {
 width: 100%;
-padding: 25px 12px 45px;
-gap: 22px;
+padding: 30px 12px 45px;
+gap: 25px;
 }
 
 .portfolioHeader {
@@ -578,9 +588,9 @@ width: 42px;
 .blurb p {
 width: 100%;
 max-width: 100%;
+padding: 5px;
 font-size: 21px;
 line-height: 1.55;
-padding: 5px;
 }
 
 .projectCollage {
@@ -588,7 +598,6 @@ width: 100%;
 max-width: 100%;
 padding: 0 5px;
 gap: 5px;
-margin-bottom: 35px;
 overflow: hidden;
 }
 

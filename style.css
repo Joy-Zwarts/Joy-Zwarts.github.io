@@ -36,13 +36,19 @@ h4 {
   font-weight: 100;
 }
 
-header {
+body > header {
   background: #A5A5A5;
   height: 54.2px;
   width: 100%;
   display: flex;
   align-items: center;
   padding: 0 20px;
+}
+
+body > header section {
+  width: 100%;
+  display: flex;
+  align-items: center;
   gap: 30px;
 }
 
@@ -127,7 +133,9 @@ p {
 .headerHistory {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 20px;
+  background: white;
 }
 
 .school {
@@ -169,11 +177,20 @@ footer {
   padding-top: 50px;
 }
 
+footer section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
 .blurb {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  width: 100%;
 }
 
 .portfolioHeader {
@@ -186,25 +203,25 @@ footer {
 .blurb p {
   text-align: center;
   padding: 5px;
+  max-width: 1000px;
 }
 
 .projectCollage {
   position: relative;
-  width: 830px;
-  height: 770px;
+  width: 100%;
+  max-width: 830px;
   margin: 0 auto;
   background: white;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 20px;
 }
 
 .projectCollage > img:not(.buttons) {
-  width: 830px;
-  height: 770px;
-  object-fit: contain;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .projectCollage > a {
@@ -216,23 +233,33 @@ footer {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 500px;
+  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
+.projectShowcase article {
+  width: 100%;
+}
+
+.projectShowcase h2 {
+  font-size: 48px;
+  margin: 8px 0;
+}
+
 .projectShowcase p {
-  line-height: 2;
+  line-height: 1.4;
   font-size: 19px;
   width: 100%;
   text-align: center;
 }
 
 .demoVideo {
-  width: 410px;
-  height: 290px;
+  width: 100%;
+  max-width: 410px;
+  height: auto;
 }
 
 .projectThumbnail {
@@ -264,6 +291,14 @@ footer {
 }
 
 @media (max-width: 1200px) {
+  body > header {
+    padding: 0 10px;
+  }
+
+  body > header section {
+    gap: 15px;
+  }
+
   .top {
     flex-direction: column;
     align-items: center;
@@ -368,20 +403,14 @@ footer {
 
   .projectCollage {
     width: 100%;
-    height: auto;
-    min-height: 0;
-    margin: 0 auto;
+    max-width: 830px;
     padding: 0 10px;
     gap: 10px;
   }
 
   .projectCollage > img:not(.buttons) {
-    width: min(830px, 85%);
+    width: 100%;
     height: auto;
-  }
-
-  .projectCollage > a {
-    flex-shrink: 0;
   }
 
   .projectCollage > a img.buttons {
@@ -390,13 +419,10 @@ footer {
   }
 
   .projectShowcase {
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
     width: 58%;
   }
 
-  .projectShowcase h1 {
+  .projectShowcase h2 {
     font-size: 40px;
     margin: 8px 0;
   }
@@ -404,11 +430,12 @@ footer {
   .projectShowcase p {
     font-size: 18px;
     line-height: 1.4;
-    width: 60%;
+    width: 100%;
   }
 
   .demoVideo {
     width: 100%;
+    max-width: 410px;
     height: auto;
   }
 
@@ -416,11 +443,18 @@ footer {
     gap: 15px;
     padding-top: 20px;
   }
+
+  footer section {
+    gap: 15px;
+  }
 }
 
 @media (max-width: 600px) {
-  header {
+  body > header {
     padding: 0 8px;
+  }
+
+  body > header section {
     gap: 10px;
   }
 
@@ -505,6 +539,7 @@ footer {
   }
 
   .blurb {
+    width: 100%;
     padding: 5px 10px;
   }
 
@@ -522,21 +557,21 @@ footer {
   }
 
   .blurb p {
+    width: 100%;
     font-size: 18px;
     line-height: 1.4;
   }
 
   .projectCollage {
     width: 100%;
-    height: auto;
-    min-height: 0;
-    margin: 0 auto;
+    max-width: 100%;
     padding: 0 5px;
     gap: 5px;
+    overflow: hidden;
   }
 
   .projectCollage > img:not(.buttons) {
-    width: 82%;
+    width: 100%;
     height: auto;
   }
 
@@ -546,25 +581,23 @@ footer {
   }
 
   .projectShowcase {
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 60%;
+    width: 62%;
   }
 
-  .projectShowcase h1 {
+  .projectShowcase h2 {
     font-size: 30px;
     margin: 5px 0;
   }
 
   .projectShowcase p {
+    width: 100%;
     font-size: 12px;
     line-height: 1.2;
-    width: 100%;
   }
 
   .demoVideo {
-    width: 70%;
+    width: 100%;
+    max-width: 410px;
     height: auto;
   }
 
@@ -572,4 +605,9 @@ footer {
     gap: 8px;
     padding-top: 15px;
   }
+
+  footer section {
+    gap: 8px;
+  }
 }
+

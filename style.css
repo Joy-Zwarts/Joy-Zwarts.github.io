@@ -343,7 +343,7 @@ gap: 30px;
     }
 
     img.buttons {
-        max-width: 75px;
+        width: 75px;
         height: auto;
     }
 
@@ -353,7 +353,7 @@ gap: 30px;
     }
 
     img.tabIcons {
-        max-width: 75px;
+        width: 75px;
         height: auto;
         margin-left: auto;
     }
@@ -402,21 +402,23 @@ gap: 30px;
 
     .whoamiTitle {
         position: absolute;
-        top: 12%;
+        top: 13%;
         left: 50%;
         transform: translateX(-50%);
         width: 70%;
-        font-size: 34px;
+        font-size: 32px;
+        line-height: 1;
         text-align: center;
     }
 
     .whoamiText {
-        position: static;
-        transform: none;
-        width: 90%;
-        margin-top: 20px;
-        font-size: 20px;
-        line-height: 1.5;
+        position: absolute;
+        top: 27%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 67%;
+        font-size: 15px;
+        line-height: 1.35;
         text-align: left;
         overflow-wrap: break-word;
     }
@@ -546,8 +548,6 @@ gap: 30px;
 
     .projectShowcase {
         position: static;
-        left: auto;
-        top: auto;
         transform: none;
         grid-column: 2;
         width: 100%;
@@ -642,7 +642,7 @@ gap: 30px;
     }
 
     footer img {
-        max-width: 90px;
+        width: 90px;
         height: auto;
     }
 }
@@ -659,11 +659,15 @@ gap: 30px;
     }
 
     img.buttons {
-        max-width: 65px;
+        width: 65px;
+    }
+
+    img.divider {
+        width: 13px;
     }
 
     img.tabIcons {
-        max-width: 65px;
+        width: 65px;
     }
 
     .portfolioHeader h1 {
@@ -699,14 +703,16 @@ gap: 30px;
     }
 
     .whoamiTitle {
-        top: 11%;
-        font-size: 29px;
+        top: 12%;
+        width: 70%;
+        font-size: 28px;
     }
 
     .whoamiText {
-        width: 90%;
-        font-size: 19px;
-        line-height: 1.45;
+        top: 26%;
+        width: 67%;
+        font-size: 13px;
+        line-height: 1.3;
     }
 
     .blogPostDateTime h1 {
@@ -718,6 +724,6 @@ gap: 30px;
     }
 
     footer img {
-        max-width: 75px;
+        width: 75px;
     }
 }

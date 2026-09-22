@@ -5,13 +5,6 @@
 body {
 margin: 0;
 background: white;
-min-height: 100vh;
-display: flex;
-flex-direction: column;
-}
-
-main {
-flex: 1;
 }
 
 h1,
@@ -50,7 +43,6 @@ width: 100%;
 display: flex;
 align-items: center;
 padding: 0 20px;
-flex-shrink: 0;
 }
 
 body > header section {
@@ -175,26 +167,6 @@ font-size: 22px;
 font-weight: 100;
 }
 
-footer {
-background: white;
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: center;
-gap: 30px;
-padding: 50px 0 20px;
-margin-top: auto;
-flex-shrink: 0;
-}
-
-footer section {
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: center;
-gap: 30px;
-}
-
 .blurb {
 display: flex;
 flex-direction: column;
@@ -221,7 +193,7 @@ line-height: 1.5;
 position: relative;
 width: 100%;
 max-width: 830px;
-margin: 0 auto;
+margin: 0 auto 40px;
 background: white;
 display: flex;
 align-items: center;
@@ -261,10 +233,10 @@ margin: 8px 0;
 }
 
 .projectShowcase p {
-line-height: 1.4;
-font-size: 19px;
 width: 100%;
 text-align: center;
+font-size: 19px;
+line-height: 1.4;
 }
 
 .demoVideo {
@@ -301,7 +273,26 @@ width: 70%;
 text-align: center;
 }
 
+footer {
+background: white;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+gap: 30px;
+padding: 40px 0 20px;
+}
+
+footer section {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+gap: 30px;
+}
+
 @media (max-width: 1200px) {
+
 body > header {
 padding: 0 10px;
 }
@@ -417,6 +408,7 @@ width: 100%;
 max-width: 830px;
 padding: 0 10px;
 gap: 10px;
+margin-bottom: 35px;
 }
 
 .projectCollage > img:not(.buttons) {
@@ -441,7 +433,6 @@ margin: 8px 0;
 .projectShowcase p {
 font-size: 19px;
 line-height: 1.4;
-width: 100%;
 }
 
 .demoVideo {
@@ -461,6 +452,7 @@ gap: 15px;
 }
 
 @media (max-width: 600px) {
+
 body > header {
 padding: 0 8px;
 }
@@ -551,7 +543,7 @@ font-size: 19px;
 
 .blurb {
 width: 100%;
-padding: 15px 10px 35px;
+padding: 15px 10px 30px;
 }
 
 .portfolioHeader {
@@ -579,6 +571,7 @@ width: 100%;
 max-width: 100%;
 padding: 0 5px;
 gap: 5px;
+margin-bottom: 25px;
 overflow: hidden;
 }
 
@@ -615,7 +608,7 @@ height: auto;
 
 footer {
 gap: 8px;
-padding: 45px 0 20px;
+padding: 25px 0 15px;
 }
 
 footer section {

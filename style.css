@@ -335,25 +335,25 @@ gap: 30px;
 
     body > header {
         height: 65px;
-        padding: 8px 10px;
+        padding: 0 20px;
     }
 
     body > header section {
-        gap: 10px;
+        gap: 30px;
     }
 
     img.buttons {
-        width: 75px;
+        width: auto;
         height: auto;
     }
 
     img.divider {
-        width: 15px;
+        width: auto;
         height: auto;
     }
 
     img.tabIcons {
-        width: 75px;
+        width: auto;
         height: auto;
         margin-left: auto;
     }
@@ -402,22 +402,22 @@ gap: 30px;
 
     .whoamiTitle {
         position: absolute;
-        top: 13%;
+        top: 11%;
         left: 50%;
         transform: translateX(-50%);
-        width: 70%;
-        font-size: 32px;
+        width: 80%;
+        font-size: 31px;
         line-height: 1;
         text-align: center;
     }
 
     .whoamiText {
         position: absolute;
-        top: 27%;
+        top: 24%;
         left: 50%;
         transform: translateX(-50%);
-        width: 67%;
-        font-size: 15px;
+        width: 76%;
+        font-size: 13.5px;
         line-height: 1.35;
         text-align: left;
         overflow-wrap: break-word;
@@ -633,16 +633,16 @@ gap: 30px;
 
     footer {
         width: 100%;
-        padding: 35px 10px 25px;
+        padding: 45px 20px 25px;
     }
 
     footer section {
         width: 100%;
-        gap: 15px;
+        gap: 30px;
     }
 
     footer img {
-        width: 90px;
+        width: auto;
         height: auto;
     }
 }
@@ -650,24 +650,12 @@ gap: 30px;
 @media (max-width: 400px) {
 
     body > header {
-        height: 60px;
-        padding: 7px;
+        height: 54.2px;
+        padding: 0 20px;
     }
 
     body > header section {
-        gap: 6px;
-    }
-
-    img.buttons {
-        width: 65px;
-    }
-
-    img.divider {
-        width: 13px;
-    }
-
-    img.tabIcons {
-        width: 65px;
+        gap: 20px;
     }
 
     .portfolioHeader h1 {
@@ -703,15 +691,15 @@ gap: 30px;
     }
 
     .whoamiTitle {
-        top: 12%;
-        width: 70%;
-        font-size: 28px;
+        top: 10%;
+        width: 82%;
+        font-size: 27px;
     }
 
     .whoamiText {
-        top: 26%;
-        width: 67%;
-        font-size: 13px;
+        top: 22%;
+        width: 78%;
+        font-size: 12px;
         line-height: 1.3;
     }
 
@@ -721,9 +709,5 @@ gap: 30px;
 
     .blogPosts p {
         font-size: 18px;
-    }
-
-    footer img {
-        width: 75px;
     }
 }

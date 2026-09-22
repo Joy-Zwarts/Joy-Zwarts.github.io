@@ -691,13 +691,13 @@ footer section {
     }
 
     .whoamiTitle {
-        top: 10%;
+        top: 15%;
         width: 84%;
         font-size: 25px;
     }
 
     .whoamiText {
-        top: 20%;
+        top: 25%;
         width: 82%;
         font-size: 11.5px;
         line-height: 1.25;

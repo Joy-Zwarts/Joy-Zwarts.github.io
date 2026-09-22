@@ -313,7 +313,6 @@ footer section {
     gap: 30px;
 }
 
-
 @media (max-width: 700px) {
 
     body {
@@ -334,38 +333,30 @@ footer section {
         font-size: 38px;
     }
 
-
-    /* HEADER */
-
     body > header {
-        height: 54.2px;
+        height: auto;
         width: 100%;
-        padding: 0 10px;
+        padding: 10px 15px;
     }
 
     body > header section {
         width: 100%;
-        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         align-items: center;
-        gap: 15px;
+        justify-content: center;
+        gap: 12px;
     }
 
-    body > header section img.buttons,
-    body > header section img.divider,
-    body > header section img.tabIcons {
-        display: block;
+    img.buttons {
+        max-height: 30px;
         width: auto;
-        height: auto;
-        margin: 0;
-        flex-shrink: 0;
     }
 
-    body > header section img.tabIcons {
-        margin-left: auto;
+    img.divider,
+    img.tabIcons {
+        display: none;
     }
-
-
-    /* TOP */
 
     .top {
         flex-direction: column;
@@ -393,9 +384,6 @@ footer section {
         text-align: center;
         font-size: 20px;
     }
-
-
-    /* WHO AM I */
 
     .right {
         width: 100%;
@@ -434,9 +422,6 @@ footer section {
         text-align: left;
         overflow-wrap: break-word;
     }
-
-
-    /* HISTORY */
 
     .bottom {
         margin: 20px 15px 40px;
@@ -500,9 +485,6 @@ footer section {
         margin-bottom: 5px;
     }
 
-
-    /* PORTFOLIO */
-
     .blurb {
         width: 100%;
         padding: 30px 20px;
@@ -534,9 +516,6 @@ footer section {
     .blurb p br {
         display: none;
     }
-
-
-    /* PROJECT COLLAGE */
 
     .projectCollage {
         position: relative;
@@ -617,9 +596,6 @@ footer section {
         height: auto;
     }
 
-
-    /* BLOG */
-
     .blogPosts {
         width: 100%;
         padding: 0 20px;
@@ -655,29 +631,30 @@ footer section {
         margin-top: 25px;
     }
 
-
-    /* FOOTER */
-
     footer {
         width: 100%;
-        padding: 35px 0 25px;
+        padding: 20px 15px;
     }
 
     footer section {
         width: 100%;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        gap: 10px;
+        gap: 15px;
     }
 
     footer img {
+        max-height: 30px;
         width: auto;
-        height: auto;
         margin: 0;
     }
-}
 
+    footer img[src*="footerDivider"] {
+        display: none;
+    }
+}
 
 @media (max-width: 400px) {
 
@@ -734,4 +711,3 @@ footer section {
         font-size: 18px;
     }
 }
-

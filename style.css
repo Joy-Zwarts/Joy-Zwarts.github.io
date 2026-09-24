@@ -341,7 +341,7 @@ footer section {
 
     body > header {
         height: auto;
-        min-height: 50px;
+        min-height: 48px;
         width: 100%;
         padding: 8px 10px;
     }
@@ -351,34 +351,26 @@ footer section {
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: nowrap;
-        gap: 5px;
-    }
-
-    body > header section > * {
-        margin: 0 !important;
+        gap: 8px;
     }
 
     img.buttons {
-        max-height: 22px;
+        max-height: 24px;
         width: auto;
         object-fit: contain;
     }
 
     img.divider {
         display: block;
-        max-height: 16px;
+        max-height: 18px;
         width: auto;
         flex-shrink: 0;
     }
 
     img.tabIcons {
-        display: block;
-        max-height: 20px;
-        width: auto;
-        margin-left: 0;
-        flex-shrink: 0;
+        display: none !important;
     }
 
     .top {
@@ -636,12 +628,8 @@ footer section {
 
 @media (max-width: 400px) {
 
-    body > header {
-        padding: 6px 6px;
-    }
-
     body > header section {
-        gap: 3px;
+        gap: 5px;
     }
 
     img.buttons {
@@ -649,11 +637,7 @@ footer section {
     }
 
     img.divider {
-        max-height: 12px;
-    }
-
-    img.tabIcons {
-        max-height: 16px;
+        max-height: 14px;
     }
 
     .right {

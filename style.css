@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    background: white;
+    background: #ffffff;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -35,11 +35,12 @@ p, li, .school, .projecten {
 p, li {
     font-size: 23px;
     margin: 0;
+    line-height: 1.5;
 }
 
 body > header {
     background: #A5A5A5;
-    height: 54.2px;
+    height: 54px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -74,13 +75,14 @@ img.tabIcons {
 .top {
     display: flex;
     padding: 20px;
-    background: white;
+    background: #ffffff;
+    gap: 20px;
 }
 
 .left, .right {
     padding: 10px;
-    background: white;
-    height: 710px;
+    background: #ffffff;
+    min-height: 710px;
     width: 50%;
     display: flex;
 }
@@ -93,16 +95,20 @@ img.tabIcons {
 .right {
     position: relative;
     justify-content: center;
+    align-items: flex-start;
 }
 
 img.joy {
     width: 370px;
-    height: 405px;
+    height: auto;
+    max-height: 405px;
+    object-fit: contain;
 }
 
 img.notepad {
-    width: 670px;
-    height: 640px;
+    width: 100%;
+    max-width: 670px;
+    height: auto;
 }
 
 .whoamiTitle,
@@ -110,25 +116,29 @@ img.notepad {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 500px;
+    width: 80%;
+    max-width: 500px;
 }
 
 .whoamiTitle {
     top: 110px;
+    text-align: center;
 }
 
 .whoamiText {
     top: 180px;
-    overflow-wrap: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .bottom {
     margin: 20px;
-    background: white;
-    height: 710px;
+    background: #ffffff;
+    min-height: 710px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
 }
 
 .headerHistory {
@@ -136,7 +146,7 @@ img.notepad {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    background: white;
+    background: #ffffff;
 }
 
 .school,
@@ -203,7 +213,7 @@ img.notepad {
     width: 100%;
     max-width: 830px;
     margin: 0 auto;
-    background: white;
+    background: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -248,20 +258,24 @@ img.notepad {
     line-height: 1.45;
 }
 
-.demoVideo {
-    width: 100%;
-    max-width: 410px;
+.demoVideo,
+.projectThumbnail,
+.dominosThumbnail {
+    max-width: 100%;
     height: auto;
+    object-fit: cover;
+}
+
+.demoVideo {
+    width: 410px;
 }
 
 .projectThumbnail {
     width: 490px;
-    height: 300px;
 }
 
 .dominosThumbnail {
     width: 390px;
-    height: 300px;
 }
 
 .blogPosts {
@@ -269,6 +283,7 @@ img.notepad {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    width: 100%;
 }
 
 .blogPosts article {
@@ -304,15 +319,11 @@ footer section {
 
 footer {
     width: 100%;
-    background: white;
+    background: #ffffff;
     padding: 45px 0 25px;
     margin-top: auto;
     flex-shrink: 0;
 }
-
-/* ==========================================
-   MEDIA QUERIES
-   ========================================== */
 
 @media (max-width: 700px) {
     body {
@@ -338,9 +349,8 @@ footer {
     }
 
     body > header {
-        width: 100%;
         padding: 0 10px;
-        overflow: hidden;
+        overflow-x: auto;
     }
 
     body > header nav {
@@ -375,15 +385,15 @@ footer {
         gap: 25px;
     }
 
-    .left {
+    .left, .right {
         width: 100%;
+        min-height: auto;
         height: auto;
     }
 
     img.joy {
         width: 75%;
         max-width: 300px;
-        height: auto;
     }
 
     .left h1 {
@@ -401,14 +411,12 @@ footer {
     }
 
     .right {
-        width: 100%;
         max-width: 500px;
         margin: 0 auto;
-        height: auto;
         padding: 26% 10% 18%;
         flex-direction: column;
         align-items: center;
-        background: url("indexImages/notepad.png") no-repeat;
+        background: url("indexImages/notepad.png") no-repeat center center;
         background-size: 100% 100%;
     }
 
@@ -417,7 +425,6 @@ footer {
         position: static;
         transform: none;
         width: 100%;
-        text-align: left;
     }
 
     .whoamiTitle {
@@ -426,19 +433,18 @@ footer {
     }
 
     .whoamiText {
-        max-height: none;
-        overflow-y: visible;
         padding-right: 0;
     }
 
     .whoamiText p {
-        font-size: clamp(10px, 2.7vw, 13px);
-        line-height: 1.3;
-        overflow-wrap: break-word;
+        font-size: clamp(12px, 3vw, 15px);
+        line-height: 1.35;
+        text-align: left;
     }
 
     .bottom {
         margin: 20px 15px 40px;
+        min-height: auto;
         height: auto;
         gap: 25px;
     }
@@ -490,7 +496,6 @@ footer {
 
     .portfolioHeader img {
         width: 35px;
-        height: auto;
     }
 
     .blurb p {
@@ -504,7 +509,7 @@ footer {
         display: grid;
         grid-template-columns: 35px minmax(0, 1fr) 35px;
         gap: 5px;
-        background: url("portfolioImages/linePaper.png") no-repeat;
+        background: url("portfolioImages/linePaper.png") no-repeat center center;
         background-size: 100% 100%;
     }
 
@@ -534,18 +539,14 @@ footer {
     .dominosThumbnail,
     .demoVideo {
         width: 100%;
-        max-width: 100%;
-        height: auto;
     }
 
     .blogPosts {
-        width: 100%;
         padding: 0 15px;
         gap: 25px;
     }
 
     .blogPostDateTime {
-        width: 100%;
         flex-direction: column;
         align-items: flex-start;
         gap: 5px;
@@ -590,8 +591,7 @@ footer {
     }
 
     .whoamiText p {
-        font-size: 9px;
-        line-height: 1;
+        font-size: clamp(10px, 2.8vw, 12px);
     }
 
     .portfolioHeader h1 {

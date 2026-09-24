@@ -162,7 +162,7 @@ img.joy {
 }
 
 .school h3,
-.projecten h3,
+.projecten h4,
 .projecten li {
     font-size: 22px;
     font-weight: 100;
@@ -171,8 +171,6 @@ img.joy {
 .school h3 {
     font-family: "Inria Serif", serif;
 }
-
-/* --- AANGEPAST: Portfolio Lijststructuur (Blog Stijl) --- */
 
 .blurb {
     display: flex;
@@ -260,14 +258,12 @@ img.joy {
     width: 390px;
 }
 
-hr.portfolioDivider {
+hr.divider {
     width: 100%;
     border: none;
     border-top: 1px solid #000000;
     margin-top: 35px;
 }
-
-/* --------------------------------------------- */
 
 .blogPosts {
     display: flex;
@@ -288,10 +284,10 @@ hr.portfolioDivider {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-}
-
-.blogPostDateTime h2 {
     font-size: 32px;
+    font-family: "Handjet", sans-serif;
+    font-weight: 600;
+    margin: 0;
 }
 
 .blogPosts p {
@@ -316,7 +312,9 @@ footer {
     flex-shrink: 0;
 }
 
-@media (max-width: 700px) {
+/* tablet */
+
+@media (max-width: 768px) {
     body {
         width: 100%;
         overflow-x: hidden;
@@ -363,7 +361,7 @@ footer {
 
     img.tabIcons,
     .blurb p br,
-    footer img[src*="footerDivider"] {
+    img.footerDivider {
         display: none;
     }
 
@@ -457,8 +455,6 @@ footer {
         margin-top: 5px;
     }
 
-    /* --- AANGEPAST: Mobile Overrides Portfolio --- */
-
     .blurb {
         padding: 20px 15px;
         gap: 15px;
@@ -490,8 +486,6 @@ footer {
         width: 100%;
     }
 
-    /* -------------------------------------------- */
-
     .blogPosts {
         padding: 0 15px;
         gap: 25px;
@@ -501,10 +495,10 @@ footer {
         flex-direction: column;
         align-items: flex-start;
         gap: 5px;
-    }
-
-    .blogPostDateTime h2 {
         font-size: 24px;
+        font-family: "Handjet", sans-serif;
+        font-weight: 600;
+        margin: 0;
     }
 
     footer {
@@ -524,7 +518,9 @@ footer {
     }
 }
 
-@media (max-width: 400px) {
+/* telefoon */
+
+@media (max-width: 480px) {
     body > header nav {
         gap: 4px;
     }
@@ -545,7 +541,7 @@ footer {
         font-size: 32px;
     }
 
-    .blogPostDateTime h2 {
+    .blogPostDateTime{
         font-size: 20px;
     }
 }

@@ -370,7 +370,7 @@ footer section {
     }
 
     img.buttons {
-        height: 26px;
+        height: 36px;
         width: auto;
         display: block;
     }
@@ -646,7 +646,7 @@ footer section {
     }
 
     img.buttons {
-        height: 21px;
+        height: 31px;
     }
 
     img.divider {
@@ -662,8 +662,8 @@ footer section {
     }
 
     .whoamiText p {
-        font-size: 10px;
-        line-height: 1.25;
+        font-size: 9px;
+        line-height: 1;
     }
 
     .portfolioHeader h1 {

@@ -395,7 +395,7 @@ footer section {
         max-width: 500px;
         margin: 0 auto;
         height: auto;
-        padding: 28% 10% 16% 10%;
+        padding: 14% 10% 10% 10%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -417,7 +417,7 @@ footer section {
     }
 
     .whoamiTitle {
-        margin-bottom: 12px;
+        margin-bottom: 10px;
         text-align: center;
     }
 
@@ -428,8 +428,8 @@ footer section {
     }
 
     .whoamiText p {
-        font-size: clamp(11px, 3.2vw, 15px);
-        line-height: 1.35;
+        font-size: clamp(13px, 3.5vw, 16px);
+        line-height: 1.4;
         overflow-wrap: break-word;
     }
 
@@ -618,8 +618,9 @@ footer section {
 }
 
 @media (max-width: 400px) {
+
     .right {
-        padding: 24% 8% 18% 8%;
+        padding: 16% 8% 8% 8%;
     }
 
     .whoamiText {
@@ -627,7 +628,7 @@ footer section {
     }
 
     .whoamiText p {
-        font-size: 9px;
+        font-size: 12px;
         line-height: 1.3;
     }
 

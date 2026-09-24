@@ -16,26 +16,23 @@ main {
 
 h1, h2, h3 {
     font-family: "Handjet", sans-serif;
+    font-weight: 600;
     margin: 0;
 }
 
-h1 {
+h1, h2 {
     font-size: 48px;
-    font-weight: 600;
-}
-
-h2 {
-    font-size: 48px;
-    font-weight: 600;
 }
 
 h3 {
     font-size: 26px;
-    font-weight: 600;
+}
+
+p, li, .school, .projecten {
+    font-family: "Inria Serif", serif;
 }
 
 p, li {
-    font-family: "Inria Serif", serif;
     font-size: 23px;
     margin: 0;
 }
@@ -80,23 +77,21 @@ img.tabIcons {
     background: white;
 }
 
-.left {
+.left, .right {
     padding: 10px;
     background: white;
     height: 710px;
     width: 50%;
     display: flex;
+}
+
+.left {
     flex-direction: column;
     align-items: center;
 }
 
 .right {
     position: relative;
-    padding: 10px;
-    background: white;
-    height: 710px;
-    width: 50%;
-    display: flex;
     justify-content: center;
 }
 
@@ -144,26 +139,19 @@ img.notepad {
     background: white;
 }
 
-.school {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 30px;
-    font-family: "Inria Serif", serif;
-}
-
-.school h3 {
-    font-family: "Inria Serif", serif;
-    font-size: 26px;
-    font-weight: 600;
-}
-
+.school,
 .projecten {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.school {
+    gap: 30px;
+}
+
+.projecten {
     gap: 40px;
-    font-family: "Inria Serif", serif;
 }
 
 .school h3,
@@ -171,6 +159,10 @@ img.notepad {
 .projecten li {
     font-size: 22px;
     font-weight: 100;
+}
+
+.school h3 {
+    font-family: "Inria Serif", serif;
 }
 
 .blurb {
@@ -301,19 +293,7 @@ img.notepad {
     margin-top: 10px;
 }
 
-footer {
-    width: 100%;
-    background: white;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    padding: 45px 0 25px;
-    margin-top: auto;
-    flex-shrink: 0;
-}
-
+footer,
 footer section {
     display: flex;
     flex-direction: row;
@@ -322,8 +302,19 @@ footer section {
     gap: 30px;
 }
 
-@media (max-width: 700px) {
+footer {
+    width: 100%;
+    background: white;
+    padding: 45px 0 25px;
+    margin-top: auto;
+    flex-shrink: 0;
+}
 
+/* ==========================================
+   MEDIA QUERIES
+   ========================================== */
+
+@media (max-width: 700px) {
     body {
         width: 100%;
         overflow-x: hidden;
@@ -347,42 +338,34 @@ footer section {
     }
 
     body > header {
-        height: 54.2px;
         width: 100%;
         padding: 0 10px;
         overflow: hidden;
     }
 
     body > header nav {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
         flex-wrap: nowrap;
-        align-items: center;
         justify-content: flex-start;
         gap: 8px;
-    }
-
-    body > header nav > a {
-        display: flex;
-        align-items: center;
-        flex-shrink: 0; 
     }
 
     img.buttons {
         height: 36px;
         width: auto;
-        display: block;
     }
 
     img.divider {
-        display: block;
         height: 22px;
         width: auto;
         flex-shrink: 0;
     }
 
-    img.tabIcons {
+    img.tabIcons,
+    img.notepad,
+    .projectCollage > img:not(.buttons),
+    .blurb p br,
+    .projectShowcase p br,
+    footer img[src*="footerDivider"] {
         display: none;
     }
 
@@ -395,7 +378,6 @@ footer section {
     .left {
         width: 100%;
         height: auto;
-        padding: 10px;
     }
 
     img.joy {
@@ -408,7 +390,13 @@ footer section {
         margin-top: 15px;
     }
 
-    .left p {
+    .left p,
+    .headerHistory,
+    .school,
+    .projecten,
+    .blurb p,
+    .projectShowcase,
+    .projectShowcase p {
         text-align: center;
     }
 
@@ -417,17 +405,11 @@ footer section {
         max-width: 500px;
         margin: 0 auto;
         height: auto;
-        padding: 26% 10% 18% 10%;
-        display: flex;
+        padding: 26% 10% 18%;
         flex-direction: column;
         align-items: center;
-        background-image: url("indexImages/notepad.png");
+        background: url("indexImages/notepad.png") no-repeat;
         background-size: 100% 100%;
-        background-repeat: no-repeat;
-    }
-
-    img.notepad {
-        display: none;
     }
 
     .whoamiTitle,
@@ -463,7 +445,6 @@ footer section {
 
     .headerHistory {
         gap: 10px;
-        text-align: center;
     }
 
     .historyicon {
@@ -475,7 +456,6 @@ footer section {
         width: 100%;
         flex-direction: column;
         gap: 5px;
-        text-align: center;
     }
 
     .pinImage {
@@ -487,7 +467,6 @@ footer section {
     .projecten {
         width: 100%;
         display: block;
-        text-align: center;
     }
 
     .projecten ul {
@@ -497,7 +476,6 @@ footer section {
     }
 
     .blurb {
-        width: 100%;
         padding: 20px 15px;
         gap: 15px;
     }
@@ -516,57 +494,29 @@ footer section {
     }
 
     .blurb p {
-        width: 100%;
         padding: 0;
-        font-size: 18px;
-        text-align: center;
-    }
-
-    .blurb p br {
-        display: none;
     }
 
     .projectCollage {
-        position: relative;
-        width: 100%;
         max-width: 600px;
         margin: 0 auto 30px;
         padding: 30px 10px;
         display: grid;
         grid-template-columns: 35px minmax(0, 1fr) 35px;
-        align-items: center;
         gap: 5px;
-        background-image: url("portfolioImages/linePaper.png");
+        background: url("portfolioImages/linePaper.png") no-repeat;
         background-size: 100% 100%;
-        background-repeat: no-repeat;
     }
 
-    .projectCollage > img:not(.buttons) {
-        display: none;
-    }
-
-    .projectCollage > a {
-        width: 35px;
-        flex-shrink: 0;
-    }
-
+    .projectCollage > a,
     .projectCollage > a img.buttons {
         width: 35px;
-        height: auto;
     }
 
     .projectShowcase {
         position: static;
         transform: none;
         grid-column: 2;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .projectShowcase article {
         width: 100%;
     }
 
@@ -576,24 +526,15 @@ footer section {
     }
 
     .projectShowcase p {
-        width: 100%;
         font-size: 16px;
         line-height: 1.4;
     }
 
-    .projectShowcase p br {
-        display: none;
-    }
-
     .projectThumbnail,
-    .dominosThumbnail {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-    }
-
+    .dominosThumbnail,
     .demoVideo {
         width: 100%;
+        max-width: 100%;
         height: auto;
     }
 
@@ -615,16 +556,12 @@ footer section {
     }
 
     footer {
-        width: 100%;
         padding: 20px 15px;
     }
 
     footer section {
         width: 100%;
-        flex-direction: row;
         flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
         gap: 15px;
     }
 
@@ -633,14 +570,9 @@ footer section {
         width: auto;
         margin: 0;
     }
-
-    footer img[src*="footerDivider"] {
-        display: none;
-    }
 }
 
 @media (max-width: 400px) {
-
     body > header nav {
         gap: 4px;
     }
@@ -654,11 +586,7 @@ footer section {
     }
 
     .right {
-        padding: 28% 8% 20% 8%;
-    }
-
-    .whoamiText {
-        max-height: none;
+        padding: 28% 8% 20%;
     }
 
     .whoamiText p {

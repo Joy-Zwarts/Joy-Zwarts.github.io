@@ -40,6 +40,7 @@ p, li {
     margin: 0;
 }
 
+/* Base header styles */
 body > header {
     background: #A5A5A5;
     height: 54.2px;
@@ -53,8 +54,15 @@ body > header {
 body > header section {
     width: 100%;
     display: flex;
+    flex-direction: row;
     align-items: center;
     gap: 30px;
+}
+
+body > header section > a {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
 }
 
 img.buttons,
@@ -340,37 +348,44 @@ footer section {
     }
 
     body > header {
-        height: auto;
-        min-height: 48px;
+        height: 50px;
         width: 100%;
-        padding: 8px 10px;
+        padding: 0 10px;
+        overflow: hidden;
     }
 
     body > header section {
         width: 100%;
         display: flex;
         flex-direction: row;
-        align-items: center;
-        justify-content: center;
         flex-wrap: nowrap;
-        gap: 8px;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 6px;
+    }
+
+    body > header section > a {
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
     }
 
     img.buttons {
-        max-height: 24px;
+        height: 20px;
         width: auto;
+        max-width: 80px;
         object-fit: contain;
     }
 
     img.divider {
         display: block;
-        max-height: 18px;
+        height: 16px;
         width: auto;
         flex-shrink: 0;
     }
 
     img.tabIcons {
-        display: none !important;
+        display: none;
     }
 
     .top {
@@ -629,15 +644,15 @@ footer section {
 @media (max-width: 400px) {
 
     body > header section {
-        gap: 5px;
+        gap: 4px;
     }
 
     img.buttons {
-        max-height: 18px;
+        height: 16px;
     }
 
     img.divider {
-        max-height: 14px;
+        height: 12px;
     }
 
     .right {

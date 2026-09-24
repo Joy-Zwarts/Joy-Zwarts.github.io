@@ -51,7 +51,7 @@ body > header {
     flex-shrink: 0;
 }
 
-body > header section {
+body > header nav {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -59,7 +59,7 @@ body > header section {
     gap: 30px;
 }
 
-body > header section > a {
+body > header nav > a {
     display: flex;
     align-items: center;
     flex-shrink: 0;
@@ -354,32 +354,33 @@ footer section {
         overflow: hidden;
     }
 
-    body > header section {
+    body > header nav {
         width: 100%;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         align-items: center;
         justify-content: flex-start;
-        gap: 6px;
+        gap: 8px;
     }
 
-    body > header section > a {
+    body > header nav > a {
         display: flex;
         align-items: center;
-        flex-shrink: 0;
+        flex-shrink: 1;
+        min-width: 0;
     }
 
     img.buttons {
-        height: 20px;
+        height: 22px;
         width: auto;
-        max-width: 80px;
+        max-width: 100%;
         object-fit: contain;
     }
 
     img.divider {
         display: block;
-        height: 16px;
+        height: 18px;
         width: auto;
         flex-shrink: 0;
     }
@@ -643,7 +644,7 @@ footer section {
 
 @media (max-width: 400px) {
 
-    body > header section {
+    body > header nav {
         gap: 4px;
     }
 

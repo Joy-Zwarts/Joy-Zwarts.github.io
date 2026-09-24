@@ -40,7 +40,6 @@ p, li {
     margin: 0;
 }
 
-/* Base header styles */
 body > header {
     background: #A5A5A5;
     height: 54.2px;
@@ -347,11 +346,10 @@ footer section {
         font-size: 22px;
     }
 
-    /* Herstelde header hoogte en opmaak */
     body > header {
         height: 54.2px;
         width: 100%;
-        padding: 0 15px;
+        padding: 0 10px;
         overflow: hidden;
     }
 
@@ -362,30 +360,28 @@ footer section {
         flex-wrap: nowrap;
         align-items: center;
         justify-content: flex-start;
-        gap: 12px; /* Oorspronkelijke gap terug */
+        gap: 8px;
     }
 
     body > header nav > a {
         display: flex;
         align-items: center;
-        flex-shrink: 0;
+        flex-shrink: 0; 
     }
 
-    /* Knoppen behouden hun originele formaat */
     img.buttons {
-        height: auto;
+        height: 26px;
         width: auto;
-        max-height: none;
+        display: block;
     }
 
     img.divider {
         display: block;
-        height: auto;
+        height: 22px;
         width: auto;
         flex-shrink: 0;
     }
 
-    /* Verbergt alleen de icoontjes rechts zodat de grote knoppen passen */
     img.tabIcons {
         display: none;
     }
@@ -646,7 +642,15 @@ footer section {
 @media (max-width: 400px) {
 
     body > header nav {
-        gap: 8px;
+        gap: 4px;
+    }
+
+    img.buttons {
+        height: 21px;
+    }
+
+    img.divider {
+        height: 18px;
     }
 
     .right {

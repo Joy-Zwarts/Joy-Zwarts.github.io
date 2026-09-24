@@ -395,8 +395,7 @@ footer section {
         max-width: 500px;
         margin: 0 auto;
         height: auto;
-        min-height: 450px;
-        padding: 50px 35px 35px 35px;
+        padding: 14% 10% 10% 10%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -423,14 +422,14 @@ footer section {
     }
 
     .whoamiText {
-        max-height: 320px;
-        overflow-y: auto;
-        padding-right: 5px;
+        max-height: none;
+        overflow-y: visible;
+        padding-right: 0;
     }
 
     .whoamiText p {
-        font-size: 13px;
-        line-height: 1.35;
+        font-size: clamp(13px, 3.5vw, 16px);
+        line-height: 1.4;
         overflow-wrap: break-word;
     }
 
@@ -621,11 +620,11 @@ footer section {
 @media (max-width: 400px) {
 
     .right {
-        padding: 40px 20px 25px 20px;
+        padding: 16% 8% 8% 8%;
     }
 
     .whoamiText {
-        max-height: 260px;
+        max-height: none;
     }
 
     .whoamiText p {

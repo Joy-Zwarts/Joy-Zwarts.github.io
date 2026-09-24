@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\joyzw\\WPFW opdrachten\\WPFWopdrachten\\CsharpProjects\\TestProject\\TestProject.csproj",
+      "projectUniqueName": "C:\\Users\\joyzw\\Joy-Zwarts.github.io\\CsharpProjects\\TestProject\\TestProject.csproj",
       "projectName": "TestProject",
-      "projectPath": "C:\\Users\\joyzw\\WPFW opdrachten\\WPFWopdrachten\\CsharpProjects\\TestProject\\TestProject.csproj",
+      "projectPath": "C:\\Users\\joyzw\\Joy-Zwarts.github.io\\CsharpProjects\\TestProject\\TestProject.csproj",
       "packagesPath": "C:\\Users\\joyzw\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\joyzw\\WPFW opdrachten\\WPFWopdrachten\\CsharpProjects\\TestProject\\obj\\",
+      "outputPath": "C:\\Users\\joyzw\\Joy-Zwarts.github.io\\CsharpProjects\\TestProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\joyzw\\AppData\\Roaming\\NuGet\\NuGet.Config"

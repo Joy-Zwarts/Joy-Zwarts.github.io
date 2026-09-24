@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="nl">
     <head>
-        <title>Joy Zwarts - AfvalAlarm</title>
-        <meta name="description" content="Portfolio van Joy Zwarts, AfvalAlarm">
+        <meta charset="UTF-8">
+        <title>Joy Zwarts - Portfolio</title>
+        <meta name="description" content="Portfolio van Joy Zwarts - Al mijn projecten op een rij.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" href="style.css">
@@ -13,138 +14,108 @@
     </head>
 
     <body>
+
         <header>
             <nav>
                 <a href="index.html">
-                    <img src="indexImages/homeButton.png"
-                        alt="Home"
-                        class="buttons">
+                    <img src="indexImages/homeButton.png" alt="Home" class="buttons">
                 </a>
 
-                <img src="indexImages/divider.png"
-                    alt="">
+                <img src="indexImages/divider.png" alt="" aria-hidden="true" class="divider">
 
-                <a href="portfolio1.html">
-                    <img src="indexImages/portfolioButton.png"
-                        alt="Portfolio"
-                        class="buttons">
+                <a href="portfolio.html">
+                    <img src="indexImages/portfolioButton.png" alt="Portfolio" class="buttons">
                 </a>
 
                 <a href="blog.html">
-                    <img src="indexImages/blogButton.png"
-                        alt="Blog"
-                        class="buttons">
+                    <img src="indexImages/blogButton.png" alt="Blog" class="buttons">
                 </a>
 
-                <img src="indexImages/tabIcons.png"
-                    class="tabIcons"
-                    alt="Tab icons">
+                <img src="indexImages/tabIcons.png" alt="" class="tabIcons" aria-hidden="true">
             </nav>
         </header>
 
         <main>
 
-            <div class="blurb">
+            <section class="blurb">
                 <div class="portfolioHeader">
                     <h1>Portfolio</h1>
-
-                    <img src="portfolioImages/minesweeperSmile.png"
-                        alt="Minesweeper smile">
+                    <img src="portfolioImages/minesweeperSmile.png" alt="Minesweeper smile">
                 </div>
 
                 <p>
                     Ik programmeer al sinds ik op de basisschool zit. Ik werkte toen in Scratch.
                     Sindsdien heb ik altijd al een fascinatie gehad voor ICT en software engineering.
                     Over de jaren heb ik aan aardig wat projecten gewerkt die ik niet allemaal terug kan vinden.
-                    Hieronder heb ik een collage gemaakt van een paar van mijn projecten over de jaren
-                    waar ik het meest trots op ben. Enjoy!
+                    Hieronder vind je een overzicht van de projecten waar ik het meest trots op ben. Enjoy!
                 </p>
-            </div>
+            </section>
 
+            <div class="portfolioList">
 
-            <div class="projectCollage">
+                <!-- Project 1: AfvalAlarm -->
+                <article class="portfolioItem">
+                    <h2>AfvalAlarm</h2>
+                    <video width="410" height="290" controls poster="portfolioImages/AfvalAlarmThumbnail.png" class="demoVideo">
+                        <source src="portfolioImages/AfvalAlarm.mp4" type="video/mp4">
+                        <track src="portfolioImages/captions.vtt" kind="captions" srclang="nl" label="Nederlands" default>
+                    </video>
 
-                <a href="portfolio3.html">
-                    <img src="portfolioImages/playButtonL.png"
-                        alt="Vorige portfolio pagina"
-                        class="buttons">
-                </a>
+                    <p class="portfolioDescription">
+                        Ons Challenge project van het basissemester. Ons SDG was nummer 15, Leven op het land.
+                        Ons project was een app waarbij je punten kunt verzamelen met het opruimen van zwerfafval. 
+                        Daarna kun je de punten inwisselen voor prijzen.
+                        Dit project kreeg veel aandacht, waaronder van mensen in de gemeente Den Haag.
+                    </p>
 
-                <img src="portfolioImages/linePaper.png"
-                    alt="Portfolio collage"
-                    fetchpriority="high">
+                    <hr class="portfolioDivider">
+                </article>
 
+                <!-- Project 2: Hotel Simulatie -->
+                <article class="portfolioItem">
+                    <h2>Hotel Simulatie</h2>
+                    <img src="portfolioImages/hotelSimulatie.png" alt="Hotel Simulatie thumbnail" class="projectThumbnail">
 
-                <div class="projectShowcase">
+                    <p class="portfolioDescription">
+                        In semester 2 van het eerste jaar moesten wij een Hotelsimulatie maken als project voor het jaar.
+                        Gasten moesten in- en uitchecken, faciliteiten gebruiken, de lift gebruiken of met de trap gaan, en
+                        worden gecharged voor hun tijd in het hotel.
+                        De docent was altijd enthousiast om ons project te zien en ik heb het project uiteindelijk afgerond met een 8!
+                    </p>
 
-                    <article>
-                        <video width="410"
-                            height="290"
-                            controls
-                            poster="portfolioImages/AfvalAlarmThumbnail.png"
-                            class="demoVideo">
+                    <hr class="portfolioDivider">
+                </article>
 
-                            <source src="portfolioImages/AfvalAlarm.mp4"
-                                type="video/mp4">
+                <!-- Project 3: Dominos Trainer -->
+                <article class="portfolioItem">
+                    <h2>Dominos Trainer</h2>
+                    <img src="portfolioImages/dominos.jpeg" alt="Dominos Trainer thumbnail" class="dominosThumbnail">
 
-                            <track src="portfolioImages/captions.vtt"
-                                kind="captions"
-                                srclang="nl"
-                                label="Nederlands">
-
-                        </video>
-
-                        <div>
-                            <h2>AfvalAlarm</h2>
-
-                            <p>
-                                Ons Challenge project van het basissemester.
-                                Ons SDG was nummer 15, Leven op het land.
-                                Ons project was een app waarbij je punten kunt verzamelen
-                                met het opruimen van zwerfafval. Daarna kun je de punten
-                                inwisselen voor prijzen.
-                                Dit project kreeg veel aandacht, waaronder van mensen
-                                in de gemeente Den Haag.
-                            </p>
-                        </div>
-                    </article>
-
-                </div>
-
-
-                <a href="portfolio2.html">
-                    <img src="portfolioImages/playButtonR.png"
-                        alt="Volgende portfolio pagina"
-                        class="buttons">
-                </a>
+                    <p class="portfolioDescription">
+                        In 2023 werkte ik een tijdje bij mijn lokale Domino’s.
+                        Ik merkte een probleem tijdens de periode dat ik daar werkte: ik vond het erg lastig om de toppings van pizza’s te onthouden.
+                        Als oplossing hiervoor had ik op Scratch een game gemaakt waar je dit kon oefenen.
+                        Dit hielp enorm tijdens mijn werktijd daar!
+                    </p>
+                </article>
 
             </div>
 
         </main>
 
-
         <footer>
-            <img src="indexImages/emailIcon.png"
-                alt=""
-                class="footer">
+            <img src="indexImages/emailIcon.png" alt="" class="footer" aria-hidden="true">
 
             <a href="mailto:zwartsjoy@gmail.com">
-                <img src="indexImages/emailButton.png"
-                    alt="Email"
-                    class="footer">
+                <img src="indexImages/emailButton.png" alt="Email" class="footer">
             </a>
 
-            <img src="indexImages/footerDivider.png"
-                alt=""
-                class="footer">
+            <img src="indexImages/footerDivider.png" alt="" class="footer" aria-hidden="true">
 
-            <a href="https://www.linkedin.com/in/joy-zwarts-137976423"
-                target="_blank">
-                <img src="indexImages/linkedIn.png"
-                    alt="LinkedIn"
-                    class="footer">
+            <a href="https://www.linkedin.com/in/joy-zwarts-137976423" target="_blank" rel="noopener noreferrer">
+                <img src="indexImages/linkedIn.png" alt="LinkedIn" class="footer">
             </a>
         </footer>
+
     </body>
 </html>
-

@@ -77,12 +77,13 @@ img.tabIcons {
     padding: 20px;
     background: #ffffff;
     gap: 20px;
+    min-height: auto;
+    align-items: flex-start;
 }
 
 .left, .right {
-    padding: 20px;
+    padding: 0;
     background: #ffffff;
-    min-height: 710px;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -93,8 +94,8 @@ img.tabIcons {
 }
 
 .right {
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 img.joy {
@@ -113,13 +114,17 @@ img.joy {
 }
 
 .whoamiTitle {
+    margin-top: 0;
     margin-bottom: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 .whoamiText {
-    word-wrap: break-word;
+    white-space: normal;
+    word-break: normal;
     overflow-wrap: break-word;
+    font-size: clamp(14px, 1.4vw, 23px);
+    line-height: 1.35;
     text-align: left;
 }
 
@@ -167,12 +172,16 @@ img.joy {
     font-family: "Inria Serif", serif;
 }
 
+/* --- AANGEPAST: Portfolio Lijststructuur (Blog Stijl) --- */
+
 .blurb {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 35px 20px 45px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 35px 20px 20px;
     gap: 25px;
 }
 
@@ -180,7 +189,7 @@ img.joy {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 25px;
+    gap: 20px;
 }
 
 .portfolioHeader h1 {
@@ -188,66 +197,46 @@ img.joy {
 }
 
 .portfolioHeader img {
-    width: 50px;
+    width: 45px;
     height: auto;
 }
 
 .blurb p {
-    max-width: 1000px;
-    padding: 5px;
+    width: 100%;
+    padding: 0;
     text-align: center;
-    font-size: 25px;
-    line-height: 1.55;
+    font-size: 23px;
+    line-height: 1.5;
 }
 
-.projectCollage {
-    position: relative;
-    width: 100%;
-    max-width: 830px;
-    margin: 0 auto;
-    background: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-
-.projectCollage > img:not(.buttons) {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.projectCollage > a {
-    flex-shrink: 0;
-}
-
-.projectShowcase {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 60%;
+.portfolioList {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 30px;
+    width: 100%;
+    padding: 20px 0 40px;
+}
+
+.portfolioItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    padding: 0 20px;
     text-align: center;
 }
 
-.projectShowcase article {
-    width: 100%;
+.portfolioItem h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
 }
 
-.projectShowcase h2 {
-    margin: 12px 0;
-    font-size: 48px;
-}
-
-.projectShowcase p {
+.portfolioDescription {
+    text-align: left;
+    margin-top: 15px;
     width: 100%;
-    text-align: center;
-    font-size: 20px;
-    line-height: 1.45;
 }
 
 .demoVideo,
@@ -256,6 +245,7 @@ img.joy {
     max-width: 100%;
     height: auto;
     object-fit: cover;
+    margin: 10px 0;
 }
 
 .demoVideo {
@@ -269,6 +259,15 @@ img.joy {
 .dominosThumbnail {
     width: 390px;
 }
+
+hr.portfolioDivider {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #000000;
+    margin-top: 35px;
+}
+
+/* --------------------------------------------- */
 
 .blogPosts {
     display: flex;
@@ -363,9 +362,7 @@ footer {
     }
 
     img.tabIcons,
-    .projectCollage > img:not(.buttons),
     .blurb p br,
-    .projectShowcase p br,
     footer img[src*="footerDivider"] {
         display: none;
     }
@@ -374,6 +371,7 @@ footer {
         flex-direction: column;
         padding: 15px;
         gap: 25px;
+        align-items: center;
     }
 
     .left, .right {
@@ -381,6 +379,7 @@ footer {
         min-height: auto;
         height: auto;
         padding: 10px;
+        align-items: center;
     }
 
     img.joy {
@@ -396,9 +395,7 @@ footer {
     .headerHistory,
     .school,
     .projecten,
-    .blurb p,
-    .projectShowcase,
-    .projectShowcase p {
+    .blurb p {
         text-align: center;
     }
 
@@ -407,18 +404,18 @@ footer {
         position: static;
         transform: none;
         width: 100%;
+        text-align: center;
     }
 
     .whoamiTitle {
         margin-bottom: 12px;
-        text-align: center;
     }
 
     .whoamiText {
         padding-right: 0;
+        white-space: normal;
         font-size: clamp(14px, 3.5vw, 18px);
         line-height: 1.4;
-        text-align: left;
     }
 
     .bottom {
@@ -460,6 +457,8 @@ footer {
         margin-top: 5px;
     }
 
+    /* --- AANGEPAST: Mobile Overrides Portfolio --- */
+
     .blurb {
         padding: 20px 15px;
         gap: 15px;
@@ -481,44 +480,17 @@ footer {
         padding: 0;
     }
 
-    .projectCollage {
-        max-width: 600px;
-        margin: 0 auto 30px;
-        padding: 30px 10px;
-        display: grid;
-        grid-template-columns: 35px minmax(0, 1fr) 35px;
-        gap: 5px;
-        background: url("portfolioImages/linePaper.png") no-repeat center center;
-        background-size: 100% 100%;
+    .portfolioItem h2 {
+        font-size: 28px;
     }
 
-    .projectCollage > a,
-    .projectCollage > a img.buttons {
-        width: 35px;
-    }
-
-    .projectShowcase {
-        position: static;
-        transform: none;
-        grid-column: 2;
-        width: 100%;
-    }
-
-    .projectShowcase h2 {
-        margin: 10px 0;
-        font-size: 30px;
-    }
-
-    .projectShowcase p {
-        font-size: 16px;
-        line-height: 1.4;
-    }
-
+    .demoVideo,
     .projectThumbnail,
-    .dominosThumbnail,
-    .demoVideo {
+    .dominosThumbnail {
         width: 100%;
     }
+
+    /* -------------------------------------------- */
 
     .blogPosts {
         padding: 0 15px;
@@ -571,20 +543,6 @@ footer {
 
     .portfolioHeader h1 {
         font-size: 32px;
-    }
-
-    .projectCollage {
-        grid-template-columns: 28px minmax(0, 1fr) 28px;
-        padding: 20px 5px;
-    }
-
-    .projectCollage > a,
-    .projectCollage > a img.buttons {
-        width: 28px;
-    }
-
-    .projectShowcase h2 {
-        font-size: 24px;
     }
 
     .blogPostDateTime h2 {

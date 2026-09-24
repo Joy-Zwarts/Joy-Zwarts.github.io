@@ -390,12 +390,15 @@ footer section {
         text-align: center;
     }
 
+    /* Aangepast: meer ruimte aan de boven- en onderkant */
     .right {
         width: 100%;
         max-width: 500px;
         margin: 0 auto;
         height: auto;
-        padding: 14% 10% 10% 10%;
+        /* Padding-top verhoogd naar 22% zodat titel en tekst lager beginnen */
+        /* Padding-bottom verhoogd naar 16% zodat tekst niet meer overflowt aan de onderkant */
+        padding: 22% 10% 16% 10%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -417,7 +420,7 @@ footer section {
     }
 
     .whoamiTitle {
-        margin-bottom: 10px;
+        margin-bottom: 12px;
         text-align: center;
     }
 
@@ -427,9 +430,10 @@ footer section {
         padding-right: 0;
     }
 
+    /* Aangepast: iets kleinere tekst en regelafstand zodat het beter past op het kladblok */
     .whoamiText p {
-        font-size: clamp(13px, 3.5vw, 16px);
-        line-height: 1.4;
+        font-size: clamp(11px, 3.2vw, 15px);
+        line-height: 1.35;
         overflow-wrap: break-word;
     }
 
@@ -619,8 +623,9 @@ footer section {
 
 @media (max-width: 400px) {
 
+    /* Extra bescherming voor kleine telefoons */
     .right {
-        padding: 16% 8% 8% 8%;
+        padding: 24% 8% 18% 8%;
     }
 
     .whoamiText {
@@ -628,7 +633,7 @@ footer section {
     }
 
     .whoamiText p {
-        font-size: 12px;
+        font-size: 11px;
         line-height: 1.3;
     }
 

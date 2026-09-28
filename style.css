@@ -28,7 +28,7 @@ h3 {
     font-size: 26px;
 }
 
-p, li, .school, .projecten, label, #submit, .badge, .button {
+p, li, .school, .projecten, label, #submit, .badge {
     font-family: "Inria Serif", serif;
 }
 
@@ -206,6 +206,23 @@ img.joy {
     line-height: 1.5;
 }
 
+.sortButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.sortButtons button {
+    font-family: "Inria Serif", serif;
+    font-size: 18px;
+    padding: 10px 15px;
+    border: 0px;
+}
+
 .portfolioList {
     display: flex;
     flex-direction: column;
@@ -327,6 +344,51 @@ hr.divider {
     margin-top: 10px;
 }
 
+.github-stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin: 20px 0 30px;
+}
+
+.stats-badge {
+    display: flex;
+    align-items: center;
+    background-color: rgba(179, 179, 179, 0.5);
+    border-radius: 50px;      
+    padding: 12px 30px 12px 18px;
+    gap: 15px;
+}
+
+.github-icon {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.stats-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.stats-info p {
+    font-family: "Inria Serif", serif;
+    font-size: 20px;
+    line-height: 1.2;
+    margin: 0;
+    color: #000000;
+}
+
+.stats-subtitle {
+    font-family: "Inria Serif", serif;
+    font-size: 18px;
+    color: #000000;
+    margin: 0;
+}
+
 .contactHeader {
     display: flex;
     align-items: center;
@@ -353,7 +415,7 @@ form {
     flex-direction: row;
     gap: 20px;
     width: 100%;
-    max-width: 500px;
+    max-width: 800px;
     margin: 0 auto;
 }
 

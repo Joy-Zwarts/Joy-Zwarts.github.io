@@ -28,7 +28,7 @@ h3 {
     font-size: 26px;
 }
 
-p, li, .school, .projecten, label, #submit {
+p, li, .school, .projecten, label, #submit, .badge, .button {
     font-family: "Inria Serif", serif;
 }
 
@@ -248,6 +248,17 @@ img.joy {
     line-height: 1.4;
 }
 
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+    gap: 15px;
+    width: 100%;             
+    margin: 20px 0;          
+    flex-wrap: wrap;        
+}
+
 .demoVideo,
 .projectThumbnail,
 .dominosThumbnail {
@@ -257,6 +268,26 @@ img.joy {
     object-fit: cover;
     margin: 0;
     flex-shrink: 0;
+}
+
+.titleWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.titleWrapper h2 {
+    margin-bottom: 0;
+}
+
+.badge {
+    background-color: #ffffff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 16px;
 }
 
 hr.divider {
@@ -306,7 +337,6 @@ hr.divider {
     font-size: 56px;
 }
 
-/* Contactformulier Desktop */
 form {
     display: flex;
     flex-direction: column;
@@ -322,6 +352,12 @@ form {
     flex-direction: row;
     gap: 20px;
     width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.formTop label {
+    white-space: nowrap;
 }
 
 .formTop > div {
@@ -342,6 +378,12 @@ form input[type="email"],
 .bericht {
     width: 100%;
     max-width: 100%;
+}
+
+.formTop input[type="text"],
+.formTop input[type="email"] {
+    height: 42px;
+    padding: 8px 12px;
 }
 
 .bericht {
@@ -366,8 +408,6 @@ footer {
     margin-top: auto;
     flex-shrink: 0;
 }
-
-/* tablet & mobiel */
 
 @media (max-width: 768px) {
     body {
@@ -570,14 +610,13 @@ footer {
         margin: 0;
     }
 
-    /* Contactformulier Mobiel Instellingen */
     form {
         width: 90%;
         gap: 15px;
     }
 
     .formTop {
-        flex-direction: column; /* Naam en Email onder elkaar op mobiel */
+        flex-direction: column;
         gap: 15px;
         width: 100%;
     }
@@ -606,8 +645,6 @@ footer {
         margin: 0;
     }
 }
-
-/* telefoon */
 
 @media (max-width: 480px) {
     body > header nav {

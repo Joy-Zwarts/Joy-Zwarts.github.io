@@ -176,8 +176,7 @@ img.joy {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    max-width: 800px;
+    width: 80%;
     margin: 0 auto;
     padding: 35px 20px 20px;
     gap: 25px;
@@ -211,51 +210,53 @@ img.joy {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 35px;
     width: 100%;
     padding: 20px 0 40px;
 }
 
 .portfolioItem {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    padding: 35px 40px;
+    gap: 30px;
+    background-color: rgba(179, 179, 179, 0.5);
+    border-radius: 35px;
+}
+
+.portfolioContent {
+    flex: 1;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    max-width: 800px;
-    padding: 0 20px;
     text-align: center;
 }
 
 .portfolioItem h2 {
-    font-size: 36px;
-    margin-bottom: 15px;
+    font-size: 40px;
+    margin-bottom: 20px;
 }
 
 .portfolioDescription {
-    text-align: left;
-    margin-top: 15px;
+    text-align: center;
+    margin-top: 0;
     width: 100%;
+    font-size: 20px;
+    line-height: 1.4;
 }
 
 .demoVideo,
 .projectThumbnail,
 .dominosThumbnail {
-    max-width: 100%;
+    width: 320px;
+    max-width: 45%;
     height: auto;
     object-fit: cover;
-    margin: 10px 0;
-}
-
-.demoVideo {
-    width: 410px;
-}
-
-.projectThumbnail {
-    width: 490px;
-}
-
-.dominosThumbnail {
-    width: 390px;
+    margin: 0;
+    flex-shrink: 0;
 }
 
 hr.divider {
@@ -274,8 +275,7 @@ hr.divider {
 }
 
 .blogPosts article {
-    width: 100%;
-    max-width: 800px;
+    width: 80%;
 }
 
 .blogPostDateTime {
@@ -350,7 +350,7 @@ footer {
     flex-shrink: 0;
 }
 
-/* tablet */
+/* tablet & mobiel */
 
 @media (max-width: 768px) {
     body {
@@ -494,6 +494,7 @@ footer {
     }
 
     .blurb {
+        width: 90%;
         padding: 20px 15px;
         gap: 15px;
     }
@@ -514,6 +515,14 @@ footer {
         padding: 0;
     }
 
+    .portfolioItem {
+        width: 90%;
+        flex-direction: column;
+        padding: 25px 20px;
+        gap: 20px;
+        border-radius: 25px;
+    }
+
     .portfolioItem h2 {
         font-size: 28px;
     }
@@ -522,11 +531,16 @@ footer {
     .projectThumbnail,
     .dominosThumbnail {
         width: 100%;
+        max-width: 100%;
     }
 
     .blogPosts {
         padding: 0 15px;
         gap: 25px;
+    }
+
+    .blogPosts article {
+        width: 90%;
     }
 
     .blogPostDateTime {
@@ -579,7 +593,7 @@ footer {
         font-size: 32px;
     }
 
-    .blogPostDateTime{
+    .blogPostDateTime {
         font-size: 20px;
     }
 }

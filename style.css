@@ -306,28 +306,45 @@ hr.divider {
     font-size: 56px;
 }
 
+/* Contactformulier Desktop */
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .formTop {
     display: flex;
     flex-direction: row;
     gap: 20px;
+    width: 100%;
+}
+
+.formTop > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .formBottom {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 100%;
+}
+
+form input[type="text"],
+form input[type="email"],
+.bericht {
+    width: 100%;
+    max-width: 100%;
 }
 
 .bericht {
-    width: 800px;
-    max-width: 90vw;
     height: 300px;
     padding: 10px;
     resize: vertical;
@@ -553,6 +570,26 @@ footer {
         margin: 0;
     }
 
+    /* Contactformulier Mobiel Instellingen */
+    form {
+        width: 90%;
+        gap: 15px;
+    }
+
+    .formTop {
+        flex-direction: column; /* Naam en Email onder elkaar op mobiel */
+        gap: 15px;
+        width: 100%;
+    }
+
+    .formTop > div {
+        width: 100%;
+    }
+
+    .contactHeader h1 {
+        font-size: 38px;
+    }
+
     footer {
         padding: 20px 15px;
     }
@@ -589,7 +626,8 @@ footer {
         font-size: clamp(12px, 3vw, 15px);
     }
 
-    .pageHeader h1 {
+    .pageHeader h1,
+    .contactHeader h1 {
         font-size: 32px;
     }
 

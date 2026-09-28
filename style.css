@@ -28,11 +28,11 @@ h3 {
     font-size: 26px;
 }
 
-p, li, .school, .projecten {
+p, li, .school, .projecten, label, #submit {
     font-family: "Inria Serif", serif;
 }
 
-p, li {
+p, li, label, #submit {
     font-size: 23px;
     margin: 0;
     line-height: 1.5;
@@ -183,18 +183,18 @@ img.joy {
     gap: 25px;
 }
 
-.portfolioHeader {
+.pageHeader {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
 }
 
-.portfolioHeader h1 {
+.pageHeader h1 {
     font-size: 56px;
 }
 
-.portfolioHeader img {
+.pageHeader img {
     width: 45px;
     height: auto;
 }
@@ -293,6 +293,44 @@ hr.divider {
 .blogPosts p {
     text-align: left;
     margin-top: 10px;
+}
+
+.contactHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contactHeader h1 {
+    font-size: 56px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.formTop {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.formBottom {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.bericht {
+    width: 800px;
+    max-width: 90vw;
+    height: 300px;
+    padding: 10px;
+    resize: vertical;
 }
 
 footer,
@@ -460,15 +498,15 @@ footer {
         gap: 15px;
     }
 
-    .portfolioHeader {
+    .pageHeader {
         gap: 12px;
     }
 
-    .portfolioHeader h1 {
+    .pageHeader h1 {
         font-size: 38px;
     }
 
-    .portfolioHeader img {
+    .pageHeader img {
         width: 35px;
     }
 
@@ -537,7 +575,7 @@ footer {
         font-size: clamp(12px, 3vw, 15px);
     }
 
-    .portfolioHeader h1 {
+    .pageHeader h1 {
         font-size: 32px;
     }
 

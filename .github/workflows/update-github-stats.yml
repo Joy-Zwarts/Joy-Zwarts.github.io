@@ -20,11 +20,38 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          curl -L \
-            -H "Accept: application/vnd.github+json" \
-            -H "Authorization: Bearer $GH_TOKEN" \
-            "https://api.github.com/repos/Joy-Zwarts/Joy-Zwarts.github.io/stats/code_frequency" \
-            -o stats-response.json
+          echo "Getting GitHub code frequency..."
+
+          for i in {1..10}; do
+            echo "Attempt $i/10..."
+
+            STATUS=$(curl -s -o stats-response.json -w "%{http_code}" \
+              -H "Accept: application/vnd.github+json" \
+              -H "Authorization: Bearer $GH_TOKEN" \
+              "https://api.github.com/repos/Joy-Zwarts/Joy-Zwarts.github.io/stats/code_frequency")
+
+            echo "GitHub response: $STATUS"
+
+            if [ "$STATUS" = "200" ]; then
+              break
+            fi
+
+            if [ "$STATUS" = "202" ]; then
+              echo "GitHub is still calculating statistics. Waiting 30 seconds..."
+              sleep 30
+              continue
+            fi
+
+            echo "GitHub API returned an unexpected status:"
+            cat stats-response.json
+            exit 1
+          done
+
+          if [ "$STATUS" != "200" ]; then
+            echo "GitHub did not return statistics after 10 attempts."
+            cat stats-response.json
+            exit 1
+          fi
 
           python3 <<'PY'
           import json
@@ -33,7 +60,7 @@ jobs:
               data = json.load(f)
 
           if not isinstance(data, list) or not data:
-              raise Exception("GitHub did not return code frequency data")
+              raise Exception("GitHub returned empty statistics")
 
           last_week = data[-1]
 
@@ -45,7 +72,8 @@ jobs:
           with open("github-stats.json", "w") as f:
               json.dump(stats, f, indent=2)
 
-          print(stats)
+          print("Generated github-stats.json:")
+          print(json.dumps(stats, indent=2))
           PY
 
           rm stats-response.json
@@ -58,7 +86,7 @@ jobs:
           git add github-stats.json
 
           if git diff --cached --quiet; then
-            echo "No changes"
+            echo "No changes to commit"
           else
             git commit -m "Update GitHub stats"
             git push

@@ -221,6 +221,7 @@ img.joy {
     font-size: 18px;
     padding: 10px 15px;
     border: 0px;
+    cursor: pointer;
 }
 
 .portfolioList {

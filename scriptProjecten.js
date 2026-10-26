@@ -1,15 +1,44 @@
 const apiBase = "http://localhost:5224";
 let Projecten = [];
 
+function showEmptyMessage(message) {
+    const projectenlijst = document.querySelector(".portfolioList");
+    if (!projectenlijst) return;
+
+    projectenlijst.innerHTML = "";
+    const legeBericht = document.createElement("p");
+    legeBericht.textContent = message;
+    projectenlijst.appendChild(legeBericht);
+}
+
 async function loadProjects() {
-    const response = await fetch(`${apiBase}/projects`);
-    Projecten = await response.json();
-    draw(Projecten);
+    try {
+        const response = await fetch(`${apiBase}/projects`);
+        Projecten = await response.json();
+
+        if (Projecten.length === 0) {
+            document.querySelector(".portfolioList").innerHTML = "<p>Er kunnen op dit moment geen projecten getoond worden.</p>";
+            return;
+        }
+
+        draw(Projecten);
+    } catch {
+        document.querySelector(".portfolioList").innerHTML = "<p>Er kunnen op dit moment geen projecten getoond worden.</p>";
+    }
 }
 
 function draw(lijst = Projecten) {
     const projectenlijst = document.querySelector(".portfolioList");
+    if (!projectenlijst) return;
+
     projectenlijst.innerHTML = "";
+
+    if (!lijst || lijst.length === 0) {
+        const legeBericht = document.createElement("p");
+        legeBericht.textContent = "Er kunnen op dit moment geen projecten getoond worden.";
+        projectenlijst.appendChild(legeBericht);
+        return;
+    }
 
     lijst.forEach(project => {
         const article = document.createElement("article");
@@ -60,7 +89,6 @@ function draw(lijst = Projecten) {
             vid.className = project.cssClass || "";
             vid.poster = project.thumbnailUrl || "";
             vid.controls = true;
-
             article.appendChild(vid);
         }
 
@@ -73,22 +101,22 @@ const desc = document.querySelector("button.descending");
 const schoolProject = document.querySelector("button.schoolproject");
 const priveProject = document.querySelector("button.priveproject");
 
-asc.addEventListener("click", () => {
+asc?.addEventListener("click", () => {
     Projecten.sort((a, b) => a.datum - b.datum);
     draw(Projecten);
 });
 
-desc.addEventListener("click", () => {
+desc?.addEventListener("click", () => {
     Projecten.sort((a, b) => b.datum - a.datum);
     draw(Projecten);
 });
 
-schoolProject.addEventListener("click", () => {
+schoolProject?.addEventListener("click", () => {
     const gefilterd = Projecten.filter(p => p.tags === "School opdracht");
     draw(gefilterd);
 });
 
-priveProject.addEventListener("click", () => {
+priveProject?.addEventListener("click", () => {
     const gefilterd = Projecten.filter(p => p.tags === "Prive opdracht");
     draw(gefilterd);
 });
